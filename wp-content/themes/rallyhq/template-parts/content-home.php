@@ -20,16 +20,16 @@
 		<?php
 			the_content();
 
-			// wp_link_pages( array(
-			// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rallyhq' ),
-			// 	'after'  => '</div>',
-			// ) );
+			
 		?>
 
 		<?php if( get_field('team_header') ): ?>
 			<h2><?php the_field('team_header'); ?></h2>
 		<?php endif; ?>
+
+		
 	</div><!-- .entry-content -->
+
 
 	
 </article><!-- #post-## -->
