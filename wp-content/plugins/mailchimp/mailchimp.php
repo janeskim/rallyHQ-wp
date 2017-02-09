@@ -3,7 +3,7 @@
 Plugin Name: MailChimp
 Plugin URI: http://www.mailchimp.com/plugins/mailchimp-wordpress-plugin/
 Description: The MailChimp plugin allows you to quickly and easily add a signup form for your MailChimp list.
-Version: 1.5.6
+Version: 1.5.7
 Author: MailChimp
 Author URI: https://mailchimp.com/
 */
@@ -25,7 +25,7 @@ Author URI: https://mailchimp.com/
 */
 
 // Version constant for easy CSS refreshes
-define('MCSF_VER', '1.5.6');
+define('MCSF_VER', '1.5.7');
 
 // What's our permission (capability) threshold
 define('MCSF_CAP_THRESHOLD', 'manage_options');
@@ -96,8 +96,8 @@ function mailchimpSF_load_resources() {
     // JS
     if (get_option('mc_use_javascript') == 'on') {
         if (!is_admin()) {
-            wp_enqueue_script('jquery_scrollto', MCSF_URL.'js/scrollTo.js', array('jquery'), MCSF_VER);
-            wp_enqueue_script('mailchimpSF_main_js', MCSF_URL.'js/mailchimp.js', array('jquery', 'jquery-form'), MCSF_VER);
+            wp_enqueue_script('jquery_scrollto', MCSF_URL.'/js/scrollTo.js', array('jquery'), MCSF_VER);
+            wp_enqueue_script('mailchimpSF_main_js', MCSF_URL.'/js/mailchimp.js', array('jquery', 'jquery-form'), MCSF_VER);
             // some javascript to get ajax version submitting to the proper location
             global $wp_scripts;
             $wp_scripts->localize('mailchimpSF_main_js', 'mailchimpSF', array(
@@ -232,8 +232,8 @@ function mailchimpSF_request_handler() {
                 // Do a different action for html vs. js
                 switch ($_POST['mc_submit_type']) {
                     case 'html':
-                        /* Allow to fall through.  The widget will pick up the
-                        * global message left over from the signup_submit function */
+                        /* This gets set elsewhere! */
+                        break;
                     case 'js':
                         if (!headers_sent()){ //just in case...
                             header('Last-Modified: '.gmdate('D, d M Y H:i:s').' GMT', true, 200);
@@ -580,6 +580,7 @@ function mailchimpSF_change_list_if_necessary() {
 
     //we *could* support paging, but few users have that many lists (and shouldn't)
     $lists = $api->get('lists',100, array('fields' => 'lists.id,lists.name,lists.email_type_option'));
+
     $lists = $lists['lists'];
 
     if (is_array($lists) && !empty($lists) && isset($_POST['mc_list_id'])) {

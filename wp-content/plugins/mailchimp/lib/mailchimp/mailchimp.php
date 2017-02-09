@@ -20,6 +20,8 @@ class MailChimp_API {
 
     public function get($endpoint, $count = 10, $fields = array())
     {
+        $query_params = '';
+
         $url = $this->api_url . $endpoint;
 
         if ($count) {
