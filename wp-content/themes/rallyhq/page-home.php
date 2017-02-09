@@ -96,11 +96,27 @@ get_header(); ?>
 		    endif;
 
 		    wp_reset_postdata();
-
 			?>
 		</section>
-	</div><!-- #primary -->
+		<div class="mailchimp" style="border:1px solid silver; height:300px;"">
+			placeholder - mailchimp signup form goes here
+		</div><!--/mailchimp-->
+
+		<section class="quotes">
+			<?php
+		    $loop = new WP_Query( array( 'post_type' => 'quote' ) );
+		    if ( $loop->have_posts() ) :
+		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <!--this will be a slideshow thing-->
+								<p><?php the_content(); ?></p>
+		        <?php endwhile;
+		    endif;
+
+		    wp_reset_postdata();
+
+			?>
+		</section><!--/quotes-->
+	</div><!--/#primary -->
 
 <?php
-get_sidebar();
 get_footer();
