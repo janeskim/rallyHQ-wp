@@ -1,0 +1,50 @@
+0000.073 (R) [notice] Looking for db archive: file name: backup_2017-02-11-1807_RallyHQ_3ce8ae914357-db.gz
+0000.073 (R) [notice] Archive is expected to be size: 166.8 KB: OK
+0000.074 (R) [notice] Looking for plugins archive: file name: backup_2017-02-11-1807_RallyHQ_3ce8ae914357-plugins.zip
+0000.074 (R) [notice] Archive is expected to be size: 9933.2 KB: OK
+0000.075 (R) [notice] Looking for themes archive: file name: backup_2017-02-11-1807_RallyHQ_3ce8ae914357-themes.zip
+0000.075 (R) [notice] Archive is expected to be size: 2310.8 KB: OK
+0000.075 (R) [notice] Looking for uploads archive: file name: backup_2017-02-11-1807_RallyHQ_3ce8ae914357-uploads.zip
+0000.076 (R) [notice] Archive is expected to be size: 2.5 KB: OK
+0000.076 (R) [notice] Looking for others archive: file name: backup_2017-02-11-1807_RallyHQ_3ce8ae914357-others.zip
+0000.076 (R) [notice] Archive is expected to be size: 1.5 KB: OK
+0000.082 (R) [notice] Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-db.gz, 0.2 Mb)
+0000.084 (R) [notice] Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.106 (R) [notice] Enabling Maintenance mode&#8230;
+0000.107 (R) [notice] Backup of: http://localhost:8888
+0000.108 (R) [notice] Content URL: http://localhost:8888/wp-content
+0000.108 (R) [notice] Uploads URL: http://localhost:8888/wp-content/uploads
+0000.108 (R) [notice] Old table prefix: wp_
+0000.108 (R) [notice] Site information: multisite = 0
+0000.109 (R) [notice] New table prefix: wp_
+0000.113 (R) [notice] Processing table (InnoDB):  wp_options
+0000.250 (R) [notice] Processing table (InnoDB):  wp_users
+0000.278 (R) [notice] Processing table (InnoDB):  wp_usermeta
+0000.298 (R) [notice] Processing table (InnoDB):  wp_commentmeta
+0000.309 (R) [notice] Processing table (InnoDB):  wp_comments
+0000.323 (R) [notice] Processing table (InnoDB):  wp_links
+0000.334 (R) [notice] Processing table (InnoDB):  wp_postmeta
+0000.373 (R) [notice] Processing table (InnoDB):  wp_posts
+0000.401 (R) [notice] Processing table (InnoDB):  wp_term_relationships
+0000.418 (R) [notice] Processing table (InnoDB):  wp_term_taxonomy
+0000.430 (R) [notice] Processing table (InnoDB):  wp_termmeta
+0000.442 (R) [notice] Processing table (InnoDB):  wp_terms
+0000.460 (R) [notice] Processing table (InnoDB):  wp_new_royalsliders
+0000.470 (R) [notice] Disabling Maintenance mode&#8230;
+0000.470 (R) [notice] Finished: lines processed: 45 in 0.38 seconds
+0000.470 (R) [notice] Cleaning up rubbish...
+0000.477 (R) [notice] Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-plugins.zip, 9.7 Mb)
+0001.563 (R) [notice] Moving old data out of the way...
+0002.461 (R) [notice] Moving unpacked backup into place...
+0003.262 (R) [notice] Cleaning up rubbish...
+0003.265 (R) [notice] Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-themes.zip, 2.3 Mb)
+0003.369 (R) [notice] Moving old data out of the way...
+0003.460 (R) [notice] Moving unpacked backup into place...
+0003.565 (R) [notice] Cleaning up rubbish...
+0003.570 (R) [notice] Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-uploads.zip, 0 Mb)
+0003.575 (R) [notice] Moving old data out of the way...
+0003.582 (R) [notice] Moving unpacked backup into place...
+0003.589 (R) [notice] Cleaning up rubbish...
+0003.592 (R) [notice] Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-others.zip, 0 Mb)
+0003.596 (R) [notice] Cleaning up rubbish...
+0003.608 (R) [notice] Restore successful!
