@@ -17,16 +17,24 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<div class="slideshow" style="border:1px solid silver; height:300px;"">
+
+				<?php
+					$loop = new WP_Query( array( 'post_type' => array('slider_video', 'campaigns')  ) );
+				    if ( $loop->have_posts() ) :
+			        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+									<?php echo get_the_title(); ?>
+									<!--todo-->
+			        <?php endwhile;
+			    endif;
+			    wp_reset_postdata();
+				?>
+			</div><!--/slideshow-->
 
 			<?php
 			while ( have_posts() ) : the_post();
 
 				get_template_part( 'template-parts/content', 'home' );
-
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
 
 			endwhile; // End of the loop.
 			?>
@@ -35,7 +43,7 @@ get_header(); ?>
 		<section class="team">
 			<h2>Team members</h2>
 			<?php
-		    $loop = new WP_Query( array( 'post_type' => 'team_members' ) );
+		    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
 		    if ( $loop->have_posts() ) :
 		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	            <div class="pindex">
@@ -59,7 +67,7 @@ get_header(); ?>
 		<section class="advisors">
 			<h2>Advisors</h2>
 			<?php
-		    $loop = new WP_Query( array( 'post_type' => 'advisors' ) );
+		    $loop = new WP_Query( array( 'post_type' => 'advisors', 'order' => 'ASC' ) );
 		    if ( $loop->have_posts() ) :
 		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 	            <div class="pindex">

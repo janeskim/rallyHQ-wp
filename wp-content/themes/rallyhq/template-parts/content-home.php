@@ -11,9 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="entry-content">
-		<div class="slideshow" style="border:1px solid silver; height:300px;"">
-			slideshow/video placeholder goes here
-		</div>
 		<?php if( get_field('mission_header') ): ?>
 			<h2><?php the_field('mission_header'); ?></h2>
 		<?php endif; ?>
