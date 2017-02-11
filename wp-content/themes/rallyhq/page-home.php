@@ -20,7 +20,7 @@ get_header(); ?>
 			<div class="slideshow" style="border:1px solid silver; height:300px;"">
 
 				<?php
-					$loop = new WP_Query( array( 'post_type' => array('slider_video', 'campaigns')  ) );
+					$loop = new WP_Query( array( 'post_type' => array('home_slider_video', 'campaigns')  ) );
 				    if ( $loop->have_posts() ) :
 			        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 									<?php echo get_the_title(); ?>

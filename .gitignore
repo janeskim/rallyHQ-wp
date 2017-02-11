@@ -1,7 +1,8 @@
 .DS_Store
 */.DS_Store
 /wp-content/updraft/.htaccess
-	wp-content/updraft/index.html
-	wp-content/updraft/web.config
-	wp-content/uploads/sucuri/index.html
-	wp-content/uploads/sucuri/sucuri-lastlogins.php
+	/wp-content/updraft/index.html
+	/wp-content/updraft/web.config
+	/wp-content/uploads/sucuri/index.html
+	/wp-content/uploads/sucuri/sucuri-settings.php
+	/wp-content/uploads/sucuri/sucuri-lastlogins.php
