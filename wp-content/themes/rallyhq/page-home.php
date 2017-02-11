@@ -116,6 +116,31 @@ get_header(); ?>
 
 			?>
 		</section><!--/quotes-->
+		<section class="join">
+			<?php
+		    $loop = new WP_Query( array( 'pagename' => 'home' ) );
+		    if ( $loop->have_posts() ) :
+		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                <?php if( get_field('join_form_header') ): ?>
+									<h2><?php the_field('join_form_header'); ?></h2>
+								<?php endif; ?>
+								<?php if( get_field('join_form_field') ): ?>
+									<h2><?php the_field('join_form_field'); ?></h2>
+								<?php endif; ?>
+		        <?php endwhile;
+		    endif;
+
+		    wp_reset_postdata();
+			?>
+		
+		</section><!--/join-->
+		<section class="instagram-feed">
+			<?php if ( is_active_sidebar( 'home_widget_1' ) ) : ?>
+	<div id="" class=" widget-area" role="complementary">
+		<?php dynamic_sidebar( 'home_widget_1' ); ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
+		</section><!--/instagram-feed-->
 	</div><!--/#primary -->
 
 <?php
