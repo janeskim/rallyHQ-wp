@@ -1,2 +1,10 @@
-// This is where imports go. 
-@import 'test';
+
+@import 'colors'; 
+@import 'functions'; 
+@import 'helpers'; 
+@import 'layouts'; 
+@import 'mixins'; 
+@import 'typography'; 
+
+@import 'pages/home';
+@import 'pages/resources';
