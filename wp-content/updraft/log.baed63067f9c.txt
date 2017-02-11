@@ -1,0 +1,190 @@
+0000.001 (0) Opened log file at time: Sat, 11 Feb 2017 03:33:33 +0000 on http://localhost:8888
+0000.002 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.32 WP: 4.7.1 PHP: 7.0.15 (apache2handler, Darwin amandas-MacBook-Pro-2.local 14.0.0 Darwin Kernel Version 14.0.0: Fri Sep 19 00:26:44 PDT 2014; root:xnu-2782.1.97~2/RELEASE_X86_64 x86_64) MySQL: 5.6.35 WPLANG: en_US Server: Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 25.3M | 2M) multisite: N openssl: OpenSSL 1.0.2j  26 Sep 2016 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.003 (0) Free space on disk containing Updraft's temporary directory: 97027.4 MB
+0000.006 (0) Tasks: Backup files: 1 (schedule: unset) Backup DB: 1 (schedule: unset)
+0000.008 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.010 (0) Set semaphore last lock (fd) time to 2017-02-11 03:33:33
+0000.011 (0) Semaphore lock (fd) complete
+0000.016 (0) Backup run: resumption=0, nonce=baed63067f9c, begun at=1486784013 (0s ago), job type=backup
+0000.018 (0) Scheduling a resumption (1) after 300 seconds (1486784313) in case this run gets aborted
+0000.031 (0) Checking if we have a zip executable available
+0000.032 (0) Testing: /usr/bin/zip
+0000.040 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.041 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.042 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.043 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.043 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.049 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.051 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.062 (0) Working binary zip found: /usr/bin/zip
+0000.064 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.065 (0) Creation of backups of directories: beginning
+0000.068 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.132 (0) Total entities for the zip file: 287 directories, 1900 files (0 skipped as non-modified), 25.1 MB
+0000.137 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.140 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.144 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.148 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.151 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.152 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.7 MB, 1900 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.478 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: size is now: 2.30 MB
+0000.483 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 600 files added (on-disk size: 2394.2 KB)
+0000.486 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 700 files added (on-disk size: 2394.2 KB)
+0000.490 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 800 files added (on-disk size: 2394.2 KB)
+0000.493 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 900 files added (on-disk size: 2394.2 KB)
+0000.496 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1000 files added (on-disk size: 2394.2 KB)
+0000.497 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (5.9 MB, 1900 files batched, 501 (1002) added so far); re-opening (prior size: 2394.2 KB)
+0000.817 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: size is now: 4.40 MB
+0000.822 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1100 files added (on-disk size: 4504.1 KB)
+0000.826 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1200 files added (on-disk size: 4504.1 KB)
+0000.829 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1300 files added (on-disk size: 4504.1 KB)
+0000.833 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1400 files added (on-disk size: 4504.1 KB)
+0000.836 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1500 files added (on-disk size: 4504.1 KB)
+0000.837 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (12.6 MB, 1900 files batched, 501 (1503) added so far); re-opening (prior size: 4504.1 KB)
+0001.596 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: size is now: 8.00 MB
+0001.602 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1600 files added (on-disk size: 8237.9 KB)
+0001.606 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1700 files added (on-disk size: 8237.9 KB)
+0001.609 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1800 files added (on-disk size: 8237.9 KB)
+0001.613 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip.tmp: 1900 files added (on-disk size: 8237.9 KB)
+0001.855 (0) Created plugins zip (0) - 8666.4 KB in 1.8 s (4855.4 KB/s) (SHA1 checksum: c207fd4cfe43e22109562d2a21f391515a678451)
+0001.858 (0) Beginning creation of dump of themes (split every: 400 MB)
+0001.867 (0) Total entities for the zip file: 30 directories, 182 files (0 skipped as non-modified), 3 MB
+0001.870 (0) Zip: backup_2017-02-11-0333_RallyHQ_baed63067f9c-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0001.991 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-themes.zip.tmp: size is now: 2.30 MB
+0002.010 (0) Created themes zip (0) - 2304.6 KB in 0.2 s (15205.1 KB/s) (SHA1 checksum: add04f4bf95338f239161de155e6cd1aa7e71231)
+0002.013 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0002.014 (0) Looking for candidates to back up in: /Users/gfwd/Desktop/rally-wordpress-install/wp-content/uploads
+0002.015 (0) finding files: 2017: adding to list (1)
+0002.016 (0) finding files: sucuri: adding to list (2)
+0002.016 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0002.019 (0) Total entities for the zip file: 3 directories, 6 files (0 skipped as non-modified), 0 MB
+0002.026 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-uploads.zip.tmp: size is now: 0.00 MB
+0002.029 (0) Created uploads zip (0) - 2 KB in 0 s (177.6 KB/s) (SHA1 checksum: 5754b48ce7337803b7298dc063d629984a78cc0f)
+0002.031 (0) Beginning backup of other directories found in the content directory (index: 0)
+0002.033 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0002.033 (0) Looking for candidates to back up in: /Users/gfwd/Desktop/rally-wordpress-install/wp-content
+0002.034 (0) finding files: .DS_Store: adding to list (1)
+0002.035 (0) finding files: index.php: adding to list (2)
+0002.036 (0) finding files: plugins: skipping: this is the plugins directory
+0002.037 (0) finding files: themes: skipping: this is the themes directory
+0002.037 (0) finding files: updraft: skipping: this is the updraft directory
+0002.038 (0) finding files: upgrade: skipping: excluded by options
+0002.038 (0) finding files: uploads: skipping: this is the uploads directory
+0002.041 (0) Total entities for the zip file: 0 directories, 2 files (0 skipped as non-modified), 0 MB
+0002.051 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-others.zip.tmp: size is now: 0.00 MB
+0002.054 (0) Created others zip (0) - 1.5 KB in 0 s (100.9 KB/s) (SHA1 checksum: 40db70899ef7d2b202398bd164bbd0819c7e302d)
+0002.059 (0) Saving backup status to database (elements: 8)
+0002.061 (0) Beginning creation of database dump (WordPress DB)
+0002.063 (0) Testing: /usr/local/bin/mysqldump
+0002.088 (0) Binary mysqldump: error (code: 2)
+0002.098 (0) Table wp_options: Total expected rows (approximate): 2303
+0002.150 (0) Table wp_options: Total rows added: 165 in 0.05 seconds
+0002.152 (0) Table wp_options: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_options.table.gz - 151.5 KB)
+0002.158 (0) Table wp_users: Total expected rows (approximate): 1
+0002.163 (0) Table wp_users: Total rows added: 1 in 0.00 seconds
+0002.166 (0) Table wp_users: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_users.table.gz - 0.6 KB)
+0002.172 (0) Table wp_usermeta: Total expected rows (approximate): 18
+0002.177 (0) Table wp_usermeta: Total rows added: 18 in 0.00 seconds
+0002.179 (0) Table wp_usermeta: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_usermeta.table.gz - 1 KB)
+0002.184 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0002.187 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0002.188 (0) Table wp_commentmeta: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0002.192 (0) Table wp_comments: Total expected rows (approximate): 1
+0002.194 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0002.195 (0) Table wp_comments: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_comments.table.gz - 0.7 KB)
+0002.199 (0) Table wp_links: Total expected rows (approximate): 0
+0002.202 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0002.203 (0) Table wp_links: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_links.table.gz - 0.4 KB)
+0002.206 (0) Table wp_postmeta: Total expected rows (approximate): 120
+0002.211 (0) Table wp_postmeta: Total rows added: 160 in 0.00 seconds
+0002.213 (0) Table wp_postmeta: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_postmeta.table.gz - 3.6 KB)
+0002.218 (0) Table wp_posts: Total expected rows (approximate): 37
+0002.223 (0) Table wp_posts: Total rows added: 37 in 0.00 seconds
+0002.224 (0) Table wp_posts: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_posts.table.gz - 3.2 KB)
+0002.227 (0) Table wp_term_relationships: Total expected rows (approximate): 1
+0002.230 (0) Table wp_term_relationships: Total rows added: 1 in 0.00 seconds
+0002.231 (0) Table wp_term_relationships: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0002.235 (0) Table wp_term_taxonomy: Total expected rows (approximate): 1
+0002.238 (0) Table wp_term_taxonomy: Total rows added: 1 in 0.00 seconds
+0002.238 (0) Table wp_term_taxonomy: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_term_taxonomy.table.gz - 0.4 KB)
+0002.242 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0002.244 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0002.246 (0) Table wp_termmeta: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_termmeta.table.gz - 0.4 KB)
+0002.249 (0) Table wp_terms: Total expected rows (approximate): 1
+0002.252 (0) Table wp_terms: Total rows added: 1 in 0.00 seconds
+0002.253 (0) Table wp_terms: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_terms.table.gz - 0.4 KB)
+0002.255 (0) Table wp_new_royalsliders: Total expected rows (approximate): 1
+0002.258 (0) Table wp_new_royalsliders: Total rows added: 1 in 0.00 seconds
+0002.259 (0) Table wp_new_royalsliders: finishing file (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_new_royalsliders.table.gz - 0.7 KB)
+0002.263 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_options.table.gz (1/13): adding to final database dump
+0002.316 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_users.table.gz (2/13): adding to final database dump
+0002.317 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_usermeta.table.gz (3/13): adding to final database dump
+0002.318 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_commentmeta.table.gz (4/13): adding to final database dump
+0002.318 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_comments.table.gz (5/13): adding to final database dump
+0002.320 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_links.table.gz (6/13): adding to final database dump
+0002.321 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_postmeta.table.gz (7/13): adding to final database dump
+0002.323 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_posts.table.gz (8/13): adding to final database dump
+0002.325 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_term_relationships.table.gz (9/13): adding to final database dump
+0002.326 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_term_taxonomy.table.gz (10/13): adding to final database dump
+0002.327 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_termmeta.table.gz (11/13): adding to final database dump
+0002.327 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_terms.table.gz (12/13): adding to final database dump
+0002.328 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db-table-wp_new_royalsliders.table.gz (13/13): adding to final database dump
+0002.330 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db.gz: finished writing out complete database file (152 KB)
+0002.335 (0) Total database tables backed up: 13 (backup_2017-02-11-0333_RallyHQ_baed63067f9c-db.gz, size: 164157, checksum (SHA1): 8adc0a1f07db853cfd06b591c73ce5ef1be5dc34)
+0002.340 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0002.341 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0002.342 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0002.343 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-others.zip: others: This file has not yet been successfully uploaded: will queue
+0002.344 (0) backup_2017-02-11-0333_RallyHQ_baed63067f9c-db.gz: db: This file has not yet been successfully uploaded: will queue
+0002.344 (0) Saving backup history. Total backup size: 10.9 MB
+0002.348 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0002.352 (0) Cloud backup selection (1/1): none (last)
+0002.353 (0) No remote despatch: user chose no remote backup service
+0002.354 (0) Recording as successfully uploaded: backup_2017-02-11-0333_RallyHQ_baed63067f9c-plugins.zip (7f906e746565422e6b5d009ae4ac5f32)
+0002.360 (0) Recording as successfully uploaded: backup_2017-02-11-0333_RallyHQ_baed63067f9c-themes.zip (b21a715e35f6c04617c2f03c1e1219ef)
+0002.364 (0) Recording as successfully uploaded: backup_2017-02-11-0333_RallyHQ_baed63067f9c-uploads.zip (03439b0d869baba2e2524111dee81e61)
+0002.368 (0) Recording as successfully uploaded: backup_2017-02-11-0333_RallyHQ_baed63067f9c-others.zip (4cbc8d017e0a0b23f00eb7a809d2d937)
+0002.373 (0) Recording as successfully uploaded: backup_2017-02-11-0333_RallyHQ_baed63067f9c-db.gz (397a4e6d5731268f32c3fffb744c9e83)
+0002.379 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0002.381 (0) Number of backup sets in history: 3; groups (db): 1
+0002.381 (0) Examining (for databases) backup set with group_id=0, nonce=baed63067f9c, datestamp=1486784013 (Feb 11 2017 03:33:33)
+0002.382 (0) This backup set is the backup set just made, so will not be deleted.
+0002.383 (0) Examining (for databases) backup set with group_id=0, nonce=28ef825c7316, datestamp=1486783119 (Feb 11 2017 03:18:39)
+0002.384 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0002.385 (0) Examining (for databases) backup set with group_id=0, nonce=c4aaf5c96001, datestamp=1486682202 (Feb 09 2017 23:16:42)
+0002.386 (0) 1486682202: db: this set includes a database (backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-db.gz); db count is now 2
+0002.386 (0) 1486682202: db: over retain limit (2); will delete this database
+0002.387 (0) Delete file: backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-db.gz, service=none
+0002.387 (0) Deleting local copy (backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-db.gz)
+0002.390 (0) This backup set remains non-empty (f=1/d=0); will retain in history
+0002.391 (0) Number of backup sets in history: 3; groups (files): 1
+0002.391 (0) Examining (for files) backup set with nonce=baed63067f9c, datestamp=1486784013 (Feb 11 2017 03:33:33)
+0002.392 (0) This backup set is the backup set just made, so will not be deleted.
+0002.393 (0) This backup set is the backup set just made, so will not be deleted.
+0002.393 (0) This backup set is the backup set just made, so will not be deleted.
+0002.393 (0) This backup set is the backup set just made, so will not be deleted.
+0002.393 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0002.394 (0) Examining (for files) backup set with nonce=28ef825c7316, datestamp=1486783119 (Feb 11 2017 03:18:39)
+0002.394 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0002.395 (0) Examining (for files) backup set with nonce=c4aaf5c96001, datestamp=1486682202 (Feb 09 2017 23:16:42)
+0002.396 (0) plugins: over retain limit (2); will delete this file entity
+0002.397 (0) themes: over retain limit (2); will delete this file entity
+0002.398 (0) uploads: over retain limit (2); will delete this file entity
+0002.399 (0) others: over retain limit (2); will delete this file entity
+0002.399 (0) Delete file: backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-plugins.zip, service=none
+0002.400 (0) Deleting local copy (backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-plugins.zip)
+0002.401 (0) Delete file: backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-themes.zip, service=none
+0002.401 (0) Deleting local copy (backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-themes.zip)
+0002.403 (0) Delete file: backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-uploads.zip, service=none
+0002.403 (0) Deleting local copy (backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-uploads.zip)
+0002.404 (0) Delete file: backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-others.zip, service=none
+0002.405 (0) Deleting local copy (backup_2017-02-09-2316_RallyHQ_c4aaf5c96001-others.zip)
+0002.407 (0) This backup set is now empty; will remove from history
+0002.407 (0) Deleting log file (log.c4aaf5c96001.txt)
+0002.408 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0002.412 (0) Resume backup (baed63067f9c, 0): finish run
+0002.414 (0) Decremented the semaphore (fd) by 1
+0002.415 (0) Semaphore (fd) unlocked
+0002.416 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0002.420 (0) No email will/can be sent - the user has not configured an email address.
+0002.420 (0) The backup apparently succeeded and is now complete
