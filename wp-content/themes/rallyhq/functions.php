@@ -101,37 +101,36 @@ function rallyhq_widgets_init() {
 }
 add_action( 'widgets_init', 'rallyhq_widgets_init' );
 
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Home page widget section',
+		'id'            => 'home_widget_1',
+		// 'before_widget' => '<div>',
+		// 'after_widget'  => '</div>',
+		// 'before_title'  => '<h2 class="rounded">',
+		// 'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+
 /**
  * Enqueue scripts and styles.
  */
 function rallyhq_scripts() {
 	wp_enqueue_style( 'rallyhq-style', get_stylesheet_uri() );
 
-	//jqueryUI css
-	wp_enqueue_style( 'jqueryUIcss', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css' );
-	//foundation css
-	wp_enqueue_style( 'foundation', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/css/foundation.min.css' );
-	//theme styles css
-	wp_enqueue_style( 'my-style', get_template_directory_uri() . '/style.css');
-
 	wp_enqueue_script( 'rallyhq-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'rallyhq-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-
-		//jquery js
-	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array('jquery'), '3.1.1', true); 
-	//underscore js
-	wp_enqueue_script( 'underscore', 'https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js', array('underscore'), '1.8.3', true);
-	//jqueryUI js
-	wp_enqueue_script( 'jqueryui', 'http://code.jquery.com/ui/1.12.1/jquery-ui.min.js', array(), '1.12.1', true);
-	//foundationjs
-	wp_enqueue_script( 'foundationjs', 'https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.0/js/foundation.min.js', array(), '6.3.0', true);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'rallyhq_scripts' );
+
 /**
  * Implement the Custom Header feature.
  */
