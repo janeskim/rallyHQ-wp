@@ -4,3 +4,12 @@
     position: relative;
   }
 }
+
+.team {
+  position: relative;
+  text-align: center;
+  .team-member {
+    width: 33%;
+    display: inline-block;
+  }
+}

@@ -3,4 +3,11 @@
   .main-navigation .menu-menu-1-container {
     position: relative; }
 
+.team {
+  position: relative;
+  text-align: center; }
+  .team .team-member {
+    width: 33%;
+    display: inline-block; }
+
 /*# sourceMappingURL=app.css.map */

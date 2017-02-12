@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home 
+ * Template Name: Home
  * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
@@ -46,7 +46,7 @@ get_header(); ?>
 		    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
 		    if ( $loop->have_posts() ) :
 		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	            <div class="pindex">
+	            <div class="pindex team-member">
 
                 <?php if ( has_post_thumbnail() ) { ?>
                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
@@ -64,7 +64,7 @@ get_header(); ?>
 			?>
 		</section><!--/team-->
 
-		<section class="advisors">
+<!-- 		<section class="advisors">
 			<h2>Advisors</h2>
 			<?php
 		    $loop = new WP_Query( array( 'post_type' => 'advisors', 'order' => 'ASC' ) );
@@ -86,7 +86,7 @@ get_header(); ?>
 		    wp_reset_postdata();
 
 			?>
-		</section>
+		</section> -->
 		<section>
 			<?php
 		    $loop = new WP_Query( array( 'pagename' => 'home' ) );
@@ -156,8 +156,8 @@ get_header(); ?>
 
 			?>
 		</section><!--/quotes-->
-		
-		
+
+
 		<section class="instagram-feed">
 			<?php if ( is_active_sidebar( 'home_widget_1' ) ) : ?>
 				<div id="" class=" widget-area" role="complementary">
