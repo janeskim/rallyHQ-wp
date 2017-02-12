@@ -21,13 +21,13 @@
   text-align: center;
   background-color: #d75558; }
   .team-container {
-    width: 80%;
+    width: 95%;
     margin: auto; }
   .team-member {
     position: relative;
     width: 33%;
     display: inline-block;
-    padding: 2.5em 3em; }
+    padding: 2em 3em; }
     .team-member:hover .team-member-info {
       display: block; }
     .team-member-info {
@@ -75,9 +75,10 @@
   .instagram-feed .instagram-pics {
     margin: 0 auto;
     padding: 0;
-    width: 90%; }
+    width: 95%; }
     .instagram-feed .instagram-pics li {
-      width: 33%; }
+      width: 33%;
+      padding: 2em 3em; }
   .instagram-feed li {
     list-style: none;
     padding: 0;
