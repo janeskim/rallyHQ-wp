@@ -7,7 +7,7 @@
 
 .intro {
   text-align: center;
-  background-color: red;
+  background-color: $salmon;
   .entry-content {
     margin: 0;
     p {
@@ -20,6 +20,7 @@
 .team {
   position: relative;
   text-align: center;
+  background-color: $watermelon;
   .team-member {
     width: 25%;
     padding: 0 2em;
@@ -29,7 +30,7 @@
 
 .more-info {
   text-align: center;
-  background-color: green;
+  background-color: $olive;
   &-content {
     margin: 0;
     width: 80%;
@@ -38,7 +39,7 @@
 }
 
 .mailchimp {
-  background-color: orange;
+  background-color: $salmon;
   #mc_embed_signup {
     margin: auto;
     width: 50%;
