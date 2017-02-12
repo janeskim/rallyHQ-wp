@@ -48,7 +48,7 @@ get_header(); ?>
 			    if ( $loop->have_posts() ) :
 			        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-		            <!-- <a href="<?php the_permalink(); ?>"></a> -->
+		            <a href="<?php the_permalink(); ?>">
 			            <div class="pindex team-member">
 		                <?php if ( has_post_thumbnail() ) { ?>
 		                  <?php the_post_thumbnail(); ?>
@@ -59,6 +59,7 @@ get_header(); ?>
 		                	<p class="team-member-name"><?php echo get_the_title(); ?></p>
 		                	<p class="team-member-role">Co-founder</p>
 		                </div>
+		               </a>
 		            </div>
 			        <?php endwhile;
 			    endif;
