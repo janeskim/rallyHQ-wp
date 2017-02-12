@@ -72,7 +72,16 @@
 
 .instagram-feed {
   background-color: #b7b7b7; }
+  .instagram-feed .instagram-pics {
+    margin: 0 auto;
+    padding: 0;
+    width: 90%; }
+    .instagram-feed .instagram-pics li {
+      width: 33%; }
   .instagram-feed li {
-    list-style: none; }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; }
 
 /*# sourceMappingURL=app.css.map */
