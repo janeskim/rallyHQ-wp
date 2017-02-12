@@ -63,30 +63,6 @@ get_header(); ?>
 
 			?>
 		</section><!--/team-->
-
-<!-- 		<section class="advisors">
-			<h2>Advisors</h2>
-			<?php
-		    $loop = new WP_Query( array( 'post_type' => 'advisors', 'order' => 'ASC' ) );
-		    if ( $loop->have_posts() ) :
-		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	            <div class="pindex">
-
-                <?php if ( has_post_thumbnail() ) { ?>
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                  <!--todo-->
-                <?php } ?>
-
-                <p class="member-name"><?php echo get_the_title(); ?></p>
-
-	            </div>
-		        <?php endwhile;
-		    endif;
-
-		    wp_reset_postdata();
-
-			?>
-		</section> -->
 		<section>
 			<?php
 		    $loop = new WP_Query( array( 'pagename' => 'home' ) );
