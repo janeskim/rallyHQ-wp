@@ -22,7 +22,8 @@
   .team-member {
     position: relative;
     width: 33%;
-    display: inline-block; }
+    display: inline-block;
+    padding: 2.5em 3em; }
     .team-member:hover .team-member-info {
       display: block; }
     .team-member-info {
