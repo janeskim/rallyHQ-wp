@@ -47,15 +47,17 @@ get_header(); ?>
 			    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
 			    if ( $loop->have_posts() ) :
 			        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-		            <div class="pindex team-member">
 
-	                <?php if ( has_post_thumbnail() ) { ?>
-	                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-	                  <!--todo-->
-	                <?php } ?>
+		            <!-- <a href="<?php the_permalink(); ?>"></a> -->
+			            <div class="pindex team-member">
+		                <?php if ( has_post_thumbnail() ) { ?>
+		                  <?php the_post_thumbnail(); ?>
+		                  <!--todo-->
+		                <?php } ?>
 
-	                <p class="member-name"><?php echo get_the_title(); ?></p>
-
+		                <div class="team-member-info">
+		                	<p class="team-member-name"><?php echo get_the_title(); ?></p>
+		                </div>
 		            </div>
 			        <?php endwhile;
 			    endif;
