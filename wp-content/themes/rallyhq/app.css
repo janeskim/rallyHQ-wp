@@ -3,6 +3,15 @@
   .main-navigation .menu-menu-1-container {
     position: relative; }
 
+.intro {
+  text-align: center;
+  background-color: orange; }
+  .intro .entry-content {
+    margin: 0; }
+    .intro .entry-content p {
+      width: 80%;
+      margin: auto; }
+
 .team {
   position: relative;
   text-align: center; }

@@ -5,6 +5,18 @@
   }
 }
 
+.intro {
+  text-align: center;
+  background-color: orange;
+  .entry-content {
+    margin: 0;
+    p {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
 .team {
   position: relative;
   text-align: center;

@@ -30,15 +30,15 @@ get_header(); ?>
 			    wp_reset_postdata();
 				?>
 			</div><!--/slideshow-->
+			<div class="intro">
+				<?php
+				while ( have_posts() ) : the_post();
 
-			<?php
-			while ( have_posts() ) : the_post();
+					get_template_part( 'template-parts/content', 'home' );
 
-				get_template_part( 'template-parts/content', 'home' );
-
-			endwhile; // End of the loop.
-			?>
-
+				endwhile; // End of the loop.
+				?>
+			</div>
 		</main><!-- #main -->
 		<section class="team">
 			<h2>Team members</h2>
