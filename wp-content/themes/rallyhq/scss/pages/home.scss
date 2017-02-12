@@ -29,7 +29,13 @@
     position: relative;
     width: 33%;
     display: inline-block;
+    &:hover {
+      .team-member-info {
+        display: block;
+      }
+    }
     &-info {
+      display: none;
       @include center;
     }
   }

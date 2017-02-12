@@ -57,6 +57,7 @@ get_header(); ?>
 
 		                <div class="team-member-info">
 		                	<p class="team-member-name"><?php echo get_the_title(); ?></p>
+		                	<p class="team-member-role">Co-founder</p>
 		                </div>
 		            </div>
 			        <?php endwhile;
