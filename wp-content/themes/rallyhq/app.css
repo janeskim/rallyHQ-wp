@@ -9,15 +9,18 @@
   .intro .entry-content {
     margin: 0; }
     .intro .entry-content p {
-      width: 80%;
+      width: 65%;
       margin: auto; }
 
 .team {
   position: relative;
   text-align: center;
   background-color: #d75558; }
-  .team .team-member {
-    width: 25%;
+  .team-container {
+    width: 80%;
+    margin: auto; }
+  .team-member {
+    width: 33%;
     padding: 0 2em;
     display: inline-block; }
 
@@ -26,11 +29,12 @@
   background-color: #96a388; }
   .more-info-content {
     margin: 0;
-    width: 80%;
+    width: 65%;
     margin: auto; }
 
 .mailchimp {
-  background-color: #f1ac89; }
+  background-color: #f1ac89;
+  color: #fff; }
   .mailchimp #mc_embed_signup {
     margin: auto;
     width: 50%; }
@@ -48,5 +52,10 @@
     width: 10em;
     height: 5em;
     border: 0 !important; }
+
+.instagram-feed {
+  background-color: #b7b7b7; }
+  .instagram-feed li {
+    list-style: none; }
 
 /*# sourceMappingURL=app.css.map */

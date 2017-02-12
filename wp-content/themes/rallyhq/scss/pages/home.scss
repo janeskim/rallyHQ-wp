@@ -11,7 +11,7 @@
   .entry-content {
     margin: 0;
     p {
-      width: 80%;
+      width: 65%;
       margin: auto;
     }
   }
@@ -21,8 +21,12 @@
   position: relative;
   text-align: center;
   background-color: $watermelon;
-  .team-member {
-    width: 25%;
+  &-container {
+    width: 80%;
+    margin: auto;
+  }
+  &-member {
+    width: 33%;
     padding: 0 2em;
     display: inline-block;
   }
@@ -33,13 +37,14 @@
   background-color: $olive;
   &-content {
     margin: 0;
-    width: 80%;
+    width: 65%;
     margin: auto;
   }
 }
 
 .mailchimp {
   background-color: $salmon;
+  color: $white;
   #mc_embed_signup {
     margin: auto;
     width: 50%;
@@ -61,5 +66,12 @@
     width: 10em;
     height: 5em;
     border: 0 !important;
+  }
+}
+
+.instagram-feed {
+  background-color: $gray;
+  li {
+    list-style: none;
   }
 }

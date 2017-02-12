@@ -39,29 +39,31 @@ get_header(); ?>
 				endwhile; // End of the loop.
 				?>
 			</div>
-		</main><!-- #main -->
+		</main>
 		<section class="team">
-			<h2>Team members</h2>
-			<?php
-		    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
-		    if ( $loop->have_posts() ) :
-		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	            <div class="pindex team-member">
+			<div class="team-container">
+				<h2>Team members</h2>
+				<?php
+			    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
+			    if ( $loop->have_posts() ) :
+			        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+		            <div class="pindex team-member">
 
-                <?php if ( has_post_thumbnail() ) { ?>
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                  <!--todo-->
-                <?php } ?>
+	                <?php if ( has_post_thumbnail() ) { ?>
+	                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+	                  <!--todo-->
+	                <?php } ?>
 
-                <p class="member-name"><?php echo get_the_title(); ?></p>
+	                <p class="member-name"><?php echo get_the_title(); ?></p>
 
-	            </div>
-		        <?php endwhile;
-		    endif;
+		            </div>
+			        <?php endwhile;
+			    endif;
 
-		    wp_reset_postdata();
+			    wp_reset_postdata();
 
-			?>
+				?>
+			</div>
 		</section><!--/team-->
 		<section class="more-info">
 			<?php
