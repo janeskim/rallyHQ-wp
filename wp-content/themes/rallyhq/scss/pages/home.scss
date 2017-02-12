@@ -33,11 +33,18 @@
     &:hover {
       .team-member-info {
         display: block;
+        color: $black;
       }
     }
     &-info {
       display: none;
       @include center;
+      &-name {
+        margin: 0;
+      }
+      &-role {
+        margin: 0;
+      }
     }
   }
 }

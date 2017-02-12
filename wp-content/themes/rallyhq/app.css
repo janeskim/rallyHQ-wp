@@ -25,13 +25,18 @@
     display: inline-block;
     padding: 2.5em 3em; }
     .team-member:hover .team-member-info {
-      display: block; }
+      display: block;
+      color: #000; }
     .team-member-info {
       display: none;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
+      .team-member-info-name {
+        margin: 0; }
+      .team-member-info-role {
+        margin: 0; }
 
 .more-info {
   text-align: center;
