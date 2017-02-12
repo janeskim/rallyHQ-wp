@@ -2,6 +2,10 @@
   position: relative; }
   .main-navigation .menu-menu-1-container {
     position: relative; }
+  .main-navigation #primary-menu {
+    float: right; }
+    .main-navigation #primary-menu .menu-item {
+      padding: 1.5em 2em 1.5em 0; }
 
 .intro {
   text-align: center;

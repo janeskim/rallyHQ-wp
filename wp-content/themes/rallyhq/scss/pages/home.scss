@@ -3,6 +3,12 @@
   .menu-menu-1-container {
     position: relative;
   }
+  #primary-menu {
+    float: right;
+    .menu-item {
+      padding: 1.5em 2em 1.5em 0;
+    }
+  }
 }
 
 .intro {
