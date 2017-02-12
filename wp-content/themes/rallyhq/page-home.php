@@ -63,7 +63,7 @@ get_header(); ?>
 
 			?>
 		</section><!--/team-->
-		<section>
+		<section class="more-info">
 			<?php
 		    $loop = new WP_Query( array( 'pagename' => 'home' ) );
 		    if ( $loop->have_posts() ) :
@@ -72,8 +72,10 @@ get_header(); ?>
 									<h2><?php the_field('how_it_works'); ?></h2>
 								<?php endif; ?>
 								<?php if( get_field('how_it_works_body') ): ?>
-									<div>
-										<?php the_field('how_it_works_body'); ?>
+									<div class="more-info-content">
+										<p>
+											<?php the_field('how_it_works_body'); ?>
+										</p>
 									</div>
 								<?php endif; ?>
 		        <?php endwhile;
@@ -81,8 +83,8 @@ get_header(); ?>
 
 		    wp_reset_postdata();
 			?>
-		</section>
-		<div class="mailchimp" style="border:1px solid silver; height:300px;"">
+		</section><!--
+		 --><div class="mailchimp">
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
 			<form action="//RallyHQ.us15.list-manage.com/subscribe/post?u=fd7e409dee67f2d831fa75b71&amp;id=485a536aec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>

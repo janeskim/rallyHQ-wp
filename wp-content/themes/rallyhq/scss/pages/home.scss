@@ -7,7 +7,7 @@
 
 .intro {
   text-align: center;
-  background-color: orange;
+  background-color: red;
   .entry-content {
     margin: 0;
     p {
@@ -21,7 +21,29 @@
   position: relative;
   text-align: center;
   .team-member {
-    width: 33%;
+    width: 25%;
+    padding: 0 2em;
     display: inline-block;
+  }
+}
+
+.more-info {
+  text-align: center;
+  background-color: green;
+  &-content {
+    margin: 0;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.mailchimp {
+  background-color: orange;
+  #mc_embed_signup {
+    margin: auto;
+    width: 50%;
+  }
+  label {
+    display: block;
   }
 }
