@@ -83,8 +83,8 @@ get_header(); ?>
 
 		    wp_reset_postdata();
 			?>
-		</section><!--
-		 --><div class="mailchimp">
+		</section>
+		<div class="mailchimp">
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
 			<form action="//RallyHQ.us15.list-manage.com/subscribe/post?u=fd7e409dee67f2d831fa75b71&amp;id=485a536aec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -94,19 +94,19 @@ get_header(); ?>
 			<div class="mc-field-group">
 			    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 			</label>
-			    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			    <input type="email" value="" name="EMAIL" class="required email mailchimp-input" id="mce-EMAIL">
 			</div>
 			<div class="mc-field-group">
 			    <label for="mce-FNAME">First Name </label>
-			    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+			    <input type="text" value="" name="FNAME" class="mailchimp-input" id="mce-FNAME">
 			</div>
 			<div class="mc-field-group">
 			    <label for="mce-LNAME">Last Name </label>
-			    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+			    <input type="text" value="" name="LNAME" class="mailchimp-input" id="mce-LNAME">
 			</div>
 			<div class="mc-field-group">
 			    <label for="mce-MMERGE3">Zip Code </label>
-			    <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+			    <input type="text" value="" name="MMERGE3" class="mailchimp-input" id="mce-MMERGE3">
 			</div>
 			    <div id="mce-responses" class="clear">
 			        <div class="response" id="mce-error-response" style="display:none"></div>

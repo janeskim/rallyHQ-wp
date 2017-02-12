@@ -36,5 +36,7 @@
     width: 50%; }
   .mailchimp label {
     display: block; }
+  .mailchimp-input {
+    width: 100%; }
 
 /*# sourceMappingURL=app.css.map */
