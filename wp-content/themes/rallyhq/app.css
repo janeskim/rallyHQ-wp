@@ -42,5 +42,11 @@
     width: 100%;
     border: 1px solid #fff !important;
     background-color: transparent; }
+  .mailchimp-button {
+    color: #fff !important;
+    background-color: #96a388 !important;
+    width: 10em;
+    height: 5em;
+    border: 0 !important; }
 
 /*# sourceMappingURL=app.css.map */

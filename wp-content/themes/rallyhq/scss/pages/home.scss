@@ -55,4 +55,11 @@
     border: 1px solid $white !important;
     background-color: transparent;
   }
+  &-button {
+    color: $white !important;
+    background-color: $olive !important;
+    width: 10em;
+    height: 5em;
+    border: 0 !important;
+  }
 }
