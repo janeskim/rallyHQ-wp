@@ -24,7 +24,16 @@
   }
 }
 
-.home-content-section p {
+.home-subheader {
+  @extend .t-lato;
+  font-size: 2em;
+  text-align: center;
+  &--white {
+    color: $white;
+  }
+}
+
+.home-article p {
   @extend .t-lato;
   font-size: 2em;
 }

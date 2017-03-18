@@ -63,7 +63,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video, .home-content-section p, .team-member-info-name {
+time, mark, audio, video, .home-subheader, .home-article p, .team-member-info-name {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
@@ -76,7 +76,13 @@ time, mark, audio, video, .home-content-section p, .team-member-info-name {
   .home-header--white {
     color: #fff; }
 
-.home-content-section p {
+.home-subheader {
+  font-size: 2em;
+  text-align: center; }
+  .home-subheader--white {
+    color: #fff; }
+
+.home-article p {
   font-size: 2em; }
 
 .main-navigation {
@@ -88,7 +94,7 @@ time, mark, audio, video, .home-content-section p, .team-member-info-name {
     .main-navigation #primary-menu .menu-item {
       padding: 1.5em 2em 1.5em 0; }
 
-.home-content-section {
+.home-article {
   padding: 2em 0;
   width: 40em;
   margin: auto; }

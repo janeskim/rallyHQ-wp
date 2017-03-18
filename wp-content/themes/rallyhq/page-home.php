@@ -31,7 +31,7 @@ get_header(); ?>
 				?>
 			</div><!--/slideshow-->
 			<section class="intro">
-				<article class="home-content-section">
+				<article class="home-article">
 					<h2 class="home-header">The Rally Mission</h2>
 					<?php
 					while ( have_posts() ) : the_post();
@@ -44,9 +44,9 @@ get_header(); ?>
 			</section>
 		</main>
 		<section class="team">
-			<article class="team-container home-content-section">
+			<article class="team-container">
 				<h2 class="home-header home-header--white">Meet Rally</h2>
-				<h3 class="home-subheader">The Rally Team</h3>
+				<h3 class="home-subheader home-subheader--white">The Rally Team</h3>
 				<?php
 			    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
 			    if ( $loop->have_posts() ) :
@@ -74,7 +74,7 @@ get_header(); ?>
 			</article>
 		</section><!--/team-->
 		<section class="more-info">
-			<article class="home-content-section">
+			<article class="home-article">
 				<?php
 			    $loop = new WP_Query( array( 'pagename' => 'home' ) );
 			    if ( $loop->have_posts() ) :
@@ -132,7 +132,7 @@ get_header(); ?>
 			<!--End mc_embed_signup-->
 		</div><!--/mailchimp-->
 
-		<section class="quotes home-content-section">
+		<section class="quotes home-article">
 			<?php
 		    $loop = new WP_Query( array( 'post_type' => 'quote' ) );
 		    if ( $loop->have_posts() ) :
@@ -146,18 +146,14 @@ get_header(); ?>
 
 			?>
 		</section><!--/quotes-->
-
-
 		<section class="instagram-feed">
-			<article class="home-content-section">
 				<h2 class="home-header">@RallyHQ</h2>
-				<h3>Instagram</h3>
+				<h3 class="home-subheader">Instagram</h3>
 				<?php if ( is_active_sidebar( 'home_widget_1' ) ) : ?>
 					<div id="" class=" widget-area" role="complementary">
 						<?php dynamic_sidebar( 'home_widget_1' ); ?>
 					</div><!--/widget-area -->
 				<?php endif; ?>
-				</article>
 			</section><!--/instagram-feed-->
 		</div><!--/#primary -->
 
