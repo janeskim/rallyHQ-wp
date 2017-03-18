@@ -1,0 +1,96 @@
+.t-playfair {
+  font-family: Playfair;
+  font-weight: bold; }
+
+.t-lato {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px; }
+
+.main-navigation {
+  position: relative; }
+  .main-navigation .menu-menu-1-container {
+    position: relative; }
+  .main-navigation #primary-menu {
+    float: right; }
+    .main-navigation #primary-menu .menu-item {
+      padding: 1.5em 2em 1.5em 0; }
+
+.intro {
+  text-align: center;
+  background-color: #f1ac89; }
+  .intro .entry-content {
+    margin: 0; }
+    .intro .entry-content p {
+      width: 65%;
+      margin: auto; }
+
+.team {
+  position: relative;
+  text-align: center;
+  background-color: #d75558; }
+  .team-container {
+    width: 95%;
+    margin: auto; }
+  .team-member {
+    position: relative;
+    width: 33%;
+    display: inline-block;
+    padding: 2em 3em; }
+    .team-member:hover .team-member-info {
+      display: block; }
+    .team-member-info {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .team-member-info-name {
+        margin: 0; }
+      .team-member-info-role {
+        margin: 0; }
+
+.more-info {
+  text-align: center;
+  background-color: #96a388; }
+  .more-info-content {
+    margin: 0;
+    width: 65%;
+    margin: auto; }
+
+.mailchimp {
+  background-color: #f1ac89;
+  color: #fff; }
+  .mailchimp #mc_embed_signup {
+    margin: auto;
+    width: 50%; }
+  .mailchimp-header {
+    text-align: center; }
+  .mailchimp label {
+    display: block; }
+  .mailchimp-input {
+    width: 100%;
+    border: 1px solid #fff !important;
+    background-color: transparent; }
+  .mailchimp-button {
+    color: #fff !important;
+    background-color: #96a388 !important;
+    width: 10em;
+    height: 5em;
+    border: 0 !important; }
+
+.instagram-feed {
+  background-color: #b7b7b7; }
+  .instagram-feed .instagram-pics {
+    margin: 0 auto;
+    padding: 0;
+    width: 95%; }
+    .instagram-feed .instagram-pics li {
+      width: 33%;
+      padding: 2em 3em; }
+  .instagram-feed li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; }
+
+/*# sourceMappingURL=app.scss.map */

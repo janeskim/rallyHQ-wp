@@ -42,7 +42,7 @@ get_header(); ?>
 		</main>
 		<section class="team">
 			<div class="team-container">
-				<h2>Team members</h2>
+				<h2 class="home-header">Team members</h2>
 				<?php
 			    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
 			    if ( $loop->have_posts() ) :
@@ -75,7 +75,7 @@ get_header(); ?>
 		    if ( $loop->have_posts() ) :
 		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
                 <?php if( get_field('how_it_works') ): ?>
-									<h2><?php the_field('how_it_works'); ?></h2>
+									<h2 class="home-header"><?php the_field('how_it_works'); ?></h2>
 								<?php endif; ?>
 								<?php if( get_field('how_it_works_body') ): ?>
 									<div class="more-info-content">
@@ -95,7 +95,7 @@ get_header(); ?>
 			<div id="mc_embed_signup">
 			<form action="//RallyHQ.us15.list-manage.com/subscribe/post?u=fd7e409dee67f2d831fa75b71&amp;id=485a536aec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			    <div id="mc_embed_signup_scroll">
-			    <h2 class="mailchimp-header">Join Rally</h2>
+			    <h2 class="home-header">Join Rally</h2>
 			<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 			<div class="mc-field-group">
 			    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
