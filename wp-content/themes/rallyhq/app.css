@@ -16,7 +16,8 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+  color: #000; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -46,7 +47,9 @@ table {
 
 .t-playfair, .home-header {
   font-family: 'Playfair Display', serif;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal; }
 
 .t-lato, html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -60,32 +63,21 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video, .team-member-info-name {
+time, mark, audio, video, .home-content-section p, .team-member-info-name {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
-  line-height: 1.5em; }
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  color: #000; }
+  line-height: 1.5em;
+  font-weight: normal;
+  font-style: normal; }
 
 .home-header {
-  font-size: 3.5em;
-  padding: 0.5em 0;
+  font-size: 4em;
   text-align: center; }
   .home-header--white {
     color: #fff; }
+
+.home-content-section p {
+  font-size: 2em; }
 
 .main-navigation {
   position: relative; }
@@ -96,22 +88,21 @@ time, mark, audio, video {
     .main-navigation #primary-menu .menu-item {
       padding: 1.5em 2em 1.5em 0; }
 
+.home-content-section {
+  padding: 2em 0;
+  width: 40em;
+  margin: auto; }
+
 .intro {
   text-align: center;
   background-color: #f1ac89; }
   .intro .entry-content {
     margin: 0; }
-    .intro .entry-content p {
-      width: 65%;
-      margin: auto; }
 
 .team {
   position: relative;
   text-align: center;
   background-color: #d75558; }
-  .team-container {
-    width: 95%;
-    margin: auto; }
   .team-member {
     position: relative;
     width: 33%;
@@ -133,10 +124,6 @@ time, mark, audio, video {
 .more-info {
   text-align: center;
   background-color: #96a388; }
-  .more-info-content {
-    margin: 0;
-    width: 65%;
-    margin: auto; }
 
 .mailchimp {
   background-color: #f1ac89;

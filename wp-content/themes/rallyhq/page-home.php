@@ -30,20 +30,23 @@ get_header(); ?>
 			    wp_reset_postdata();
 				?>
 			</div><!--/slideshow-->
-			<div class="intro">
-				<h2 class="home-header">The Rally Mission</h2>
-				<?php
-				while ( have_posts() ) : the_post();
+			<section class="intro">
+				<article class="home-content-section">
+					<h2 class="home-header">The Rally Mission</h2>
+					<?php
+					while ( have_posts() ) : the_post();
 
-					get_template_part( 'template-parts/content', 'home' );
+						get_template_part( 'template-parts/content', 'home' );
 
-				endwhile; // End of the loop.
-				?>
-			</div>
+					endwhile; // End of the loop.
+					?>
+				</article>
+			</section>
 		</main>
 		<section class="team">
-			<div class="team-container">
-				<h2 class="home-header home-header--white">Team members</h2>
+			<article class="team-container home-content-section">
+				<h2 class="home-header home-header--white">Meet Rally</h2>
+				<h3 class="home-subheader">The Rally Team</h3>
 				<?php
 			    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
 			    if ( $loop->have_posts() ) :
@@ -68,28 +71,30 @@ get_header(); ?>
 			    wp_reset_postdata();
 
 				?>
-			</div>
+			</article>
 		</section><!--/team-->
 		<section class="more-info">
-			<?php
-		    $loop = new WP_Query( array( 'pagename' => 'home' ) );
-		    if ( $loop->have_posts() ) :
-		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <?php if( get_field('how_it_works') ): ?>
-									<h2 class="home-header"><?php the_field('how_it_works'); ?></h2>
-								<?php endif; ?>
-								<?php if( get_field('how_it_works_body') ): ?>
-									<div class="more-info-content">
-										<p>
-											<?php the_field('how_it_works_body'); ?>
-										</p>
-									</div>
-								<?php endif; ?>
-		        <?php endwhile;
-		    endif;
+			<article class="home-content-section">
+				<?php
+			    $loop = new WP_Query( array( 'pagename' => 'home' ) );
+			    if ( $loop->have_posts() ) :
+			        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+	                <?php if( get_field('how_it_works') ): ?>
+										<h2 class="home-header"><?php the_field('how_it_works'); ?></h2>
+									<?php endif; ?>
+									<?php if( get_field('how_it_works_body') ): ?>
+										<div class="more-info-content">
+											<p>
+												<?php the_field('how_it_works_body'); ?>
+											</p>
+										</div>
+									<?php endif; ?>
+			        <?php endwhile;
+			    endif;
 
-		    wp_reset_postdata();
-			?>
+			    wp_reset_postdata();
+				?>
+			</article>
 		</section>
 		<div class="mailchimp">
 			<!-- Begin MailChimp Signup Form -->
@@ -127,7 +132,7 @@ get_header(); ?>
 			<!--End mc_embed_signup-->
 		</div><!--/mailchimp-->
 
-		<section class="quotes">
+		<section class="quotes home-content-section">
 			<?php
 		    $loop = new WP_Query( array( 'post_type' => 'quote' ) );
 		    if ( $loop->have_posts() ) :
@@ -144,15 +149,17 @@ get_header(); ?>
 
 
 		<section class="instagram-feed">
-			<h2 class="home-header">@RallyHQ</h2>
-			<h3>Instagram</h3>
-			<?php if ( is_active_sidebar( 'home_widget_1' ) ) : ?>
-				<div id="" class=" widget-area" role="complementary">
-					<?php dynamic_sidebar( 'home_widget_1' ); ?>
-				</div><!--/widget-area -->
-			<?php endif; ?>
-		</section><!--/instagram-feed-->
-	</div><!--/#primary -->
+			<article class="home-content-section">
+				<h2 class="home-header">@RallyHQ</h2>
+				<h3>Instagram</h3>
+				<?php if ( is_active_sidebar( 'home_widget_1' ) ) : ?>
+					<div id="" class=" widget-area" role="complementary">
+						<?php dynamic_sidebar( 'home_widget_1' ); ?>
+					</div><!--/widget-area -->
+				<?php endif; ?>
+				</article>
+			</section><!--/instagram-feed-->
+		</div><!--/#primary -->
 
 <?php
 get_footer();

@@ -11,15 +11,16 @@
   }
 }
 
+.home-content-section {
+  padding: 2em 0;
+  width: 40em;
+  margin: auto;
+}
 .intro {
   text-align: center;
   background-color: $salmon;
   .entry-content {
     margin: 0;
-    p {
-      width: 65%;
-      margin: auto;
-    }
   }
 }
 
@@ -27,10 +28,6 @@
   position: relative;
   text-align: center;
   background-color: $watermelon;
-  &-container {
-    width: 95%;
-    margin: auto;
-  }
   &-member {
     position: relative;
     width: 33%;
@@ -58,11 +55,6 @@
 .more-info {
   text-align: center;
   background-color: $olive;
-  &-content {
-    margin: 0;
-    width: 65%;
-    margin: auto;
-  }
 }
 
 .mailchimp {
