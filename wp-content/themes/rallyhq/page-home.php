@@ -31,6 +31,7 @@ get_header(); ?>
 				?>
 			</div><!--/slideshow-->
 			<div class="intro">
+				<h2 class="home-header">The Rally Mission</h2>
 				<?php
 				while ( have_posts() ) : the_post();
 
@@ -42,7 +43,7 @@ get_header(); ?>
 		</main>
 		<section class="team">
 			<div class="team-container">
-				<h2 class="home-header">Team members</h2>
+				<h2 class="home-header home-header--white">Team members</h2>
 				<?php
 			    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
 			    if ( $loop->have_posts() ) :
@@ -57,7 +58,7 @@ get_header(); ?>
 
 		                <div class="team-member-info">
 		                	<p class="team-member-info-name"><?php echo get_the_title(); ?></p>
-		                	<p class="team-member-inforole">Co-founder</p>
+		                	<p class="team-member-info-role">Co-founder</p>
 		                </div>
 		               </a>
 		            </div>
@@ -95,7 +96,7 @@ get_header(); ?>
 			<div id="mc_embed_signup">
 			<form action="//RallyHQ.us15.list-manage.com/subscribe/post?u=fd7e409dee67f2d831fa75b71&amp;id=485a536aec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			    <div id="mc_embed_signup_scroll">
-			    <h2 class="home-header">Join Rally</h2>
+			    <h2 class="home-header home-header--white">Join Rally</h2>
 			<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 			<div class="mc-field-group">
 			    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
@@ -143,6 +144,8 @@ get_header(); ?>
 
 
 		<section class="instagram-feed">
+			<h2 class="home-header">@RallyHQ</h2>
+			<h3>Instagram</h3>
 			<?php if ( is_active_sidebar( 'home_widget_1' ) ) : ?>
 				<div id="" class=" widget-area" role="complementary">
 					<?php dynamic_sidebar( 'home_widget_1' ); ?>

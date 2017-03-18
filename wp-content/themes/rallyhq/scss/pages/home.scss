@@ -46,6 +46,7 @@
       @include center;
       &-name {
         margin: 0;
+        @extend .t-lato;
       }
       &-role {
         margin: 0;
