@@ -1,8 +1,4 @@
 .main-navigation {
-  position: relative;
-  .menu-menu-1-container {
-    position: relative;
-  }
   #primary-menu {
     float: right;
     .menu-item {
@@ -11,11 +7,26 @@
   }
 }
 
-.home-article {
-  padding: 2em 0;
-  width: 40em;
-  margin: auto;
+.home {
+  &-section {
+    padding: 2em 0;
+    &--olive {
+      background-color: $olive;
+    }
+    &--salmon {
+      background-color: $salmon;
+    }
+    &--gray {
+      background-color: $gray;
+    }
+  }
+  &-article {
+    width: 40em;
+    margin: auto;
+    text-align: center;
+  }
 }
+
 .intro {
   text-align: center;
   background-color: $salmon;
@@ -54,13 +65,7 @@
   }
 }
 
-.more-info {
-  text-align: center;
-  background-color: $olive;
-}
-
 .mailchimp {
-  background-color: $salmon;
   color: $white;
   #mc_embed_signup {
     margin: auto;
@@ -87,7 +92,6 @@
 }
 
 .instagram-feed {
-  background-color: $gray;
   .instagram-pics {
     margin: 0 auto;
     padding: 0;

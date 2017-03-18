@@ -77,19 +77,23 @@ time, mark, audio, video, .home-subheader, .home-article p {
   font-weight: normal;
   font-style: normal; }
 
-.main-navigation {
-  position: relative; }
-  .main-navigation .menu-menu-1-container {
-    position: relative; }
-  .main-navigation #primary-menu {
-    float: right; }
-    .main-navigation #primary-menu .menu-item {
-      padding: 1.5em 2em 1.5em 0; }
+.main-navigation #primary-menu {
+  float: right; }
+  .main-navigation #primary-menu .menu-item {
+    padding: 1.5em 2em 1.5em 0; }
 
+.home-section {
+  padding: 2em 0; }
+  .home-section--olive {
+    background-color: #96a388; }
+  .home-section--salmon {
+    background-color: #f1ac89; }
+  .home-section--gray {
+    background-color: #b7b7b7; }
 .home-article {
-  padding: 2em 0;
   width: 40em;
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
 
 .intro {
   text-align: center;
@@ -120,12 +124,7 @@ time, mark, audio, video, .home-subheader, .home-article p {
       .team-member-info-role {
         font-size: 1.1em; }
 
-.more-info {
-  text-align: center;
-  background-color: #96a388; }
-
 .mailchimp {
-  background-color: #f1ac89;
   color: #fff; }
   .mailchimp #mc_embed_signup {
     margin: auto;
@@ -145,20 +144,18 @@ time, mark, audio, video, .home-subheader, .home-article p {
     height: 5em;
     border: 0 !important; }
 
-.instagram-feed {
-  background-color: #b7b7b7; }
-  .instagram-feed .instagram-pics {
-    margin: 0 auto;
-    padding: 0;
-    width: 95%; }
-    .instagram-feed .instagram-pics li {
-      width: 33%;
-      padding: 2em 3em; }
-  .instagram-feed li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block; }
+.instagram-feed .instagram-pics {
+  margin: 0 auto;
+  padding: 0;
+  width: 95%; }
+  .instagram-feed .instagram-pics li {
+    width: 33%;
+    padding: 2em 3em; }
+.instagram-feed li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block; }
 
 .home-header {
   font-size: 4em;

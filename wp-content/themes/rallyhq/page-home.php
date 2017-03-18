@@ -16,7 +16,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main home-section" role="main">
 			<div class="slideshow" style="border:1px solid silver; height:300px;"">
 
 				<?php
@@ -30,7 +30,7 @@ get_header(); ?>
 			    wp_reset_postdata();
 				?>
 			</div><!--/slideshow-->
-			<section class="intro">
+			<section class="intro home-section">
 				<article class="home-article">
 					<h2 class="home-header">The Rally Mission</h2>
 					<?php
@@ -43,8 +43,8 @@ get_header(); ?>
 				</article>
 			</section>
 		</main>
-		<section class="team">
-			<article class="team-container">
+		<section class="team home-section-team">
+			<article class="home-section-team-container">
 				<h2 class="home-header home-header--white">Meet Rally</h2>
 				<h3 class="home-subheader home-subheader--white">The Rally Team</h3>
 				<?php
@@ -73,7 +73,7 @@ get_header(); ?>
 				?>
 			</article>
 		</section><!--/team-->
-		<section class="more-info">
+		<section class="home-section home-section--olive">
 			<article class="home-article">
 				<?php
 			    $loop = new WP_Query( array( 'pagename' => 'home' ) );
@@ -96,7 +96,7 @@ get_header(); ?>
 				?>
 			</article>
 		</section>
-		<div class="mailchimp">
+		<div class="mailchimp home-section home-section--salmon">
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
 			<form action="//RallyHQ.us15.list-manage.com/subscribe/post?u=fd7e409dee67f2d831fa75b71&amp;id=485a536aec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -132,7 +132,7 @@ get_header(); ?>
 			<!--End mc_embed_signup-->
 		</div><!--/mailchimp-->
 
-		<section class="quotes home-article">
+		<section class="quotes home-section home-section--gray">
 			<?php
 		    $loop = new WP_Query( array( 'post_type' => 'quote' ) );
 		    if ( $loop->have_posts() ) :
@@ -146,7 +146,7 @@ get_header(); ?>
 
 			?>
 		</section><!--/quotes-->
-		<section class="instagram-feed">
+		<section class="instagram-feed home-section">
 				<h2 class="home-header">@RallyHQ</h2>
 				<h3 class="home-subheader">Instagram</h3>
 				<?php if ( is_active_sidebar( 'home_widget_1' ) ) : ?>
