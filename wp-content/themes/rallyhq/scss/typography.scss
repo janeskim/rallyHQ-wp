@@ -11,29 +11,14 @@
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
-.home-header {
-  @extend .t-playfair;
-  font-size: 4em;
-  text-align: center;
-  &--white {
-    color: $white;
-  }
-}
-
-.home-subheader {
-  @extend .t-lato;
-  font-size: 2em;
-  text-align: center;
-  &--white {
-    color: $white;
-  }
-}
-
-.home-article p {
-  @extend .t-lato;
-  font-size: 2em;
+.t-lato-reg {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: normal;
+  font-style: normal;
 }

@@ -43,10 +43,12 @@
       @include center;
       &-name {
         margin: 0;
-        @extend .t-lato;
+        @extend .t-playfair;
+        font-size: 1.5em;
       }
       &-role {
-        margin: 0;
+        @extend .t-lato-reg;
+        font-size: 1.1em;
       }
     }
   }
@@ -101,4 +103,29 @@
     margin: 0;
     display: inline-block;
   }
+}
+
+//typography
+.home-header {
+  @extend .t-playfair;
+  font-size: 4em;
+  line-height: 1.3em;
+  text-align: center;
+  &--white {
+    color: $white;
+  }
+}
+
+.home-subheader {
+  @extend .t-lato;
+  font-size: 2em;
+  text-align: center;
+  &--white {
+    color: $white;
+  }
+}
+
+.home-article p {
+  @extend .t-lato;
+  font-size: 2em;
 }

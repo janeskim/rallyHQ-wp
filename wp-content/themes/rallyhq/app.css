@@ -45,7 +45,7 @@ table {
 .hentry {
   margin: 0; }
 
-.t-playfair, .home-header {
+.t-playfair, .team-member-info-name, .home-header {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: normal;
@@ -63,27 +63,19 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video, .home-subheader, .home-article p, .team-member-info-name {
+time, mark, audio, video, .home-subheader, .home-article p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 300;
+  font-style: normal; }
+
+.t-lato-reg, .team-member-info-role {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
   font-weight: normal;
   font-style: normal; }
-
-.home-header {
-  font-size: 4em;
-  text-align: center; }
-  .home-header--white {
-    color: #fff; }
-
-.home-subheader {
-  font-size: 2em;
-  text-align: center; }
-  .home-subheader--white {
-    color: #fff; }
-
-.home-article p {
-  font-size: 2em; }
 
 .main-navigation {
   position: relative; }
@@ -123,9 +115,10 @@ time, mark, audio, video, .home-subheader, .home-article p, .team-member-info-na
       left: 50%;
       transform: translate(-50%, -50%); }
       .team-member-info-name {
-        margin: 0; }
+        margin: 0;
+        font-size: 1.5em; }
       .team-member-info-role {
-        margin: 0; }
+        font-size: 1.1em; }
 
 .more-info {
   text-align: center;
@@ -166,5 +159,21 @@ time, mark, audio, video, .home-subheader, .home-article p, .team-member-info-na
     padding: 0;
     margin: 0;
     display: inline-block; }
+
+.home-header {
+  font-size: 4em;
+  line-height: 1.3em;
+  text-align: center; }
+  .home-header--white {
+    color: #fff; }
+
+.home-subheader {
+  font-size: 2em;
+  text-align: center; }
+  .home-subheader--white {
+    color: #fff; }
+
+.home-article p {
+  font-size: 2em; }
 
 /*# sourceMappingURL=app.css.map */
