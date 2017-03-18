@@ -1,0 +1,71 @@
+0000.048 () Opened log file at time: Sat, 11 Feb 2017 22:55:49 +0000 on http://localhost:8888
+0000.049 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.12.32 WP: 4.7.1 PHP: 7.0.15 (apache2handler, Darwin Violet-Forest.local 15.6.0 Darwin Kernel Version 15.6.0: Thu Sep  1 15:01:16 PDT 2016; root:xnu-3248.60.11~2/RELEASE_X86_64 x86_64) MySQL: 5.6.35 WPLANG: en_US Server: Apache/2.2.31 (Unix) mod_wsgi/3.5 Python/2.7.13 PHP/7.0.15 mod_ssl/2.2.31 OpenSSL/1.0.2j DAV/2 mod_fastcgi/2.4.6 mod_perl/2.0.9 Perl/v5.24.0 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 25.3M | 4M) multisite: N openssl: OpenSSL 1.0.2j  26 Sep 2016 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.049 () Free space on disk containing Updraft's temporary directory: 99769.3 MB
+0000.052 () Restore job started. Entities to restore: plugins, themes, uploads, others, db. Restore options: {"updraft_restorer_replacesiteurl":false,"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false}
+0000.082 () Entity: db
+0000.082 () restore_backup(backup_file=backup_2017-02-11-1807_RallyHQ_3ce8ae914357-db.gz, type=db, info=a:0:{}, last_one=)
+0000.082 () Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-db.gz, 0.2 Mb)
+0000.084 () Database successfully unpacked
+0000.084 () Restoring the database (on a large site this can take a long time - if it times out (which can happen if your web hosting company has configured your hosting to limit resources) then you should use a different method, such as phpMyAdmin)...
+0000.084 () Using direct MySQL access; value of use_mysqli is: 1
+0000.105 () Max packet size: 32 MB
+0000.105 () Entering maintenance mode
+0000.105 () Enabling Maintenance mode&#8230;
+0000.107 () Backup of: http://localhost:8888
+0000.108 () Content URL: http://localhost:8888/wp-content
+0000.108 () Uploads URL: http://localhost:8888/wp-content/uploads
+0000.108 () Old table prefix: wp_
+0000.108 () Site information: multisite=0
+0000.109 () New table prefix: wp_
+0000.113 () Processing table (InnoDB): wp_options
+0000.238 () Restoring prior UD configuration (table: wp_options; keys: 3)
+0000.250 () Processing table (InnoDB): wp_users
+0000.278 () Processing table (InnoDB): wp_usermeta
+0000.298 () Processing table (InnoDB): wp_commentmeta
+0000.309 () Processing table (InnoDB): wp_comments
+0000.323 () Processing table (InnoDB): wp_links
+0000.334 () Processing table (InnoDB): wp_postmeta
+0000.372 () Processing table (InnoDB): wp_posts
+0000.401 () Processing table (InnoDB): wp_term_relationships
+0000.417 () Processing table (InnoDB): wp_term_taxonomy
+0000.430 () Processing table (InnoDB): wp_termmeta
+0000.442 () Processing table (InnoDB): wp_terms
+0000.460 () Processing table (InnoDB): wp_new_royalsliders
+0000.470 () Unlocking database and leaving maintenance mode
+0000.470 () Disabling Maintenance mode&#8230;
+0000.470 () Finished: lines processed: 45 in 0.38 seconds
+0000.470 () Cleaning up rubbish...
+0000.477 () Entity: plugins
+0000.477 () restore_backup(backup_file=backup_2017-02-11-1807_RallyHQ_3ce8ae914357-plugins.zip, type=plugins, info=a:2:{s:4:"path";s:44:"/Applications/MAMP/htdocs/wp-content/plugins";s:11:"description";s:7:"Plugins";}, last_one=)
+0000.477 () Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-plugins.zip, 9.7 Mb)
+0001.563 () Moving old data: filesystem method / updraft_dir is potentially possible
+0001.563 () Moving old data: can potentially use wp_filesystem method / -old
+0001.563 () Moving old data out of the way...
+0002.457 () Top-level entities being moved: advanced-custom-fields, contact-form-7, custom-post-type-ui, index.php, mailchimp, medium, new-royalslider, purge-varnish, sucuri-scanner, updraftplus, wp-instagram-widget
+0002.461 () Moving unpacked backup into place...
+0003.259 () Top-level entities being moved: advanced-custom-fields, contact-form-7, custom-post-type-ui, index.php, mailchimp, medium, new-royalslider, purge-varnish, sucuri-scanner, updraftplus, wp-instagram-widget
+0003.262 () Cleaning up rubbish...
+0003.265 () Entity: themes
+0003.265 () restore_backup(backup_file=backup_2017-02-11-1807_RallyHQ_3ce8ae914357-themes.zip, type=themes, info=a:2:{s:4:"path";s:43:"/Applications/MAMP/htdocs/wp-content/themes";s:11:"description";s:6:"Themes";}, last_one=)
+0003.265 () Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-themes.zip, 2.3 Mb)
+0003.368 () Moving old data: filesystem method / updraft_dir is potentially possible
+0003.369 () Moving old data: can potentially use wp_filesystem method / -old
+0003.369 () Moving old data out of the way...
+0003.458 () Top-level entities being moved: .DS_Store, index.php, rallyhq, twentyfifteen, twentyseventeen, twentysixteen
+0003.460 () Moving unpacked backup into place...
+0003.564 () Top-level entities being moved: .DS_Store, index.php, rallyhq, twentyfifteen, twentyseventeen, twentysixteen
+0003.565 () Cleaning up rubbish...
+0003.570 () Entity: uploads
+0003.570 () restore_backup(backup_file=backup_2017-02-11-1807_RallyHQ_3ce8ae914357-uploads.zip, type=uploads, info=a:2:{s:4:"path";s:44:"/Applications/MAMP/htdocs/wp-content/uploads";s:11:"description";s:7:"Uploads";}, last_one=)
+0003.570 () Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-uploads.zip, 0 Mb)
+0003.575 () Moving old data: filesystem method / updraft_dir is potentially possible
+0003.575 () Moving old data: can potentially use wp_filesystem method / -old
+0003.575 () Moving old data out of the way...
+0003.582 () Moving unpacked backup into place...
+0003.589 () Cleaning up rubbish...
+0003.592 () Entity: others
+0003.592 () restore_backup(backup_file=backup_2017-02-11-1807_RallyHQ_3ce8ae914357-others.zip, type=others, info=a:2:{s:4:"path";s:36:"/Applications/MAMP/htdocs/wp-content";s:11:"description";s:6:"Others";}, last_one=1)
+0003.592 () Unpacking backup... (backup_2017-02-11-1807_RallyHQ_3ce8ae914357-others.zip, 0 Mb)
+0003.596 () Cleaning up rubbish...
+0003.608 () Restore successful!
+0003.608 () Restore successful

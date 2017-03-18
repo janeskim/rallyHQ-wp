@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Home 
+ * Template Name: Home
  * The template for displaying all pages
  *
  * This is the template that displays all pages by default.
@@ -30,64 +30,46 @@ get_header(); ?>
 			    wp_reset_postdata();
 				?>
 			</div><!--/slideshow-->
+			<div class="intro">
+				<?php
+				while ( have_posts() ) : the_post();
 
-			<?php
-			while ( have_posts() ) : the_post();
+					get_template_part( 'template-parts/content', 'home' );
 
-				get_template_part( 'template-parts/content', 'home' );
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
+				endwhile; // End of the loop.
+				?>
+			</div>
+		</main>
 		<section class="team">
-			<h2>Team members</h2>
-			<?php
-		    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
-		    if ( $loop->have_posts() ) :
-		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	            <div class="pindex">
+			<div class="team-container">
+				<h2>Team members</h2>
+				<?php
+			    $loop = new WP_Query( array( 'post_type' => 'team_members', 'order' => 'ASC' ) );
+			    if ( $loop->have_posts() ) :
+			        while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                <?php if ( has_post_thumbnail() ) { ?>
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                  <!--todo-->
-                <?php } ?>
+		            <a href="<?php the_permalink(); ?>">
+			            <div class="pindex team-member">
+		                <?php if ( has_post_thumbnail() ) { ?>
+		                  <?php the_post_thumbnail(); ?>
+		                  <!--todo-->
+		                <?php } ?>
 
-                <p class="member-name"><?php echo get_the_title(); ?></p>
+		                <div class="team-member-info">
+		                	<p class="team-member-info-name"><?php echo get_the_title(); ?></p>
+		                	<p class="team-member-inforole">Co-founder</p>
+		                </div>
+		               </a>
+		            </div>
+			        <?php endwhile;
+			    endif;
 
-	            </div>
-		        <?php endwhile;
-		    endif;
+			    wp_reset_postdata();
 
-		    wp_reset_postdata();
-
-			?>
+				?>
+			</div>
 		</section><!--/team-->
-
-		<section class="advisors">
-			<h2>Advisors</h2>
-			<?php
-		    $loop = new WP_Query( array( 'post_type' => 'advisors', 'order' => 'ASC' ) );
-		    if ( $loop->have_posts() ) :
-		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	            <div class="pindex">
-
-                <?php if ( has_post_thumbnail() ) { ?>
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-                  <!--todo-->
-                <?php } ?>
-
-                <p class="member-name"><?php echo get_the_title(); ?></p>
-
-	            </div>
-		        <?php endwhile;
-		    endif;
-
-		    wp_reset_postdata();
-
-			?>
-		</section>
-		<section>
+		<section class="more-info">
 			<?php
 		    $loop = new WP_Query( array( 'pagename' => 'home' ) );
 		    if ( $loop->have_posts() ) :
@@ -96,8 +78,10 @@ get_header(); ?>
 									<h2><?php the_field('how_it_works'); ?></h2>
 								<?php endif; ?>
 								<?php if( get_field('how_it_works_body') ): ?>
-									<div>
-										<?php the_field('how_it_works_body'); ?>
+									<div class="more-info-content">
+										<p>
+											<?php the_field('how_it_works_body'); ?>
+										</p>
 									</div>
 								<?php endif; ?>
 		        <?php endwhile;
@@ -106,36 +90,36 @@ get_header(); ?>
 		    wp_reset_postdata();
 			?>
 		</section>
-		<div class="mailchimp" style="border:1px solid silver; height:300px;"">
+		<div class="mailchimp">
 			<!-- Begin MailChimp Signup Form -->
 			<div id="mc_embed_signup">
 			<form action="//RallyHQ.us15.list-manage.com/subscribe/post?u=fd7e409dee67f2d831fa75b71&amp;id=485a536aec" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 			    <div id="mc_embed_signup_scroll">
-			    <h2>Subscribe to our mailing list</h2>
+			    <h2 class="mailchimp-header">Join Rally</h2>
 			<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 			<div class="mc-field-group">
 			    <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
 			</label>
-			    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+			    <input type="email" value="" name="EMAIL" class="required email mailchimp-input" id="mce-EMAIL">
 			</div>
 			<div class="mc-field-group">
 			    <label for="mce-FNAME">First Name </label>
-			    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+			    <input type="text" value="" name="FNAME" class="mailchimp-input" id="mce-FNAME">
 			</div>
 			<div class="mc-field-group">
 			    <label for="mce-LNAME">Last Name </label>
-			    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+			    <input type="text" value="" name="LNAME" class="mailchimp-input" id="mce-LNAME">
 			</div>
 			<div class="mc-field-group">
 			    <label for="mce-MMERGE3">Zip Code </label>
-			    <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+			    <input type="text" value="" name="MMERGE3" class="mailchimp-input" id="mce-MMERGE3">
 			</div>
 			    <div id="mce-responses" class="clear">
 			        <div class="response" id="mce-error-response" style="display:none"></div>
 			        <div class="response" id="mce-success-response" style="display:none"></div>
 			    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fd7e409dee67f2d831fa75b71_485a536aec" tabindex="-1" value=""></div>
-			    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+			    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button mailchimp-button"></div>
 			    </div>
 			</form>
 			</div>
@@ -156,8 +140,8 @@ get_header(); ?>
 
 			?>
 		</section><!--/quotes-->
-		
-		
+
+
 		<section class="instagram-feed">
 			<?php if ( is_active_sidebar( 'home_widget_1' ) ) : ?>
 				<div id="" class=" widget-area" role="complementary">

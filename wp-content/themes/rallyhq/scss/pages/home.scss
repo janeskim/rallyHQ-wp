@@ -1,0 +1,111 @@
+.main-navigation {
+  position: relative;
+  .menu-menu-1-container {
+    position: relative;
+  }
+  #primary-menu {
+    float: right;
+    .menu-item {
+      padding: 1.5em 2em 1.5em 0;
+    }
+  }
+}
+
+.intro {
+  text-align: center;
+  background-color: $salmon;
+  .entry-content {
+    margin: 0;
+    p {
+      width: 65%;
+      margin: auto;
+    }
+  }
+}
+
+.team {
+  position: relative;
+  text-align: center;
+  background-color: $watermelon;
+  &-container {
+    width: 95%;
+    margin: auto;
+  }
+  &-member {
+    position: relative;
+    width: 33%;
+    display: inline-block;
+    padding: 2em 3em;
+    &:hover {
+      .team-member-info {
+        display: block;
+      }
+    }
+    &-info {
+      display: none;
+      @include center;
+      &-name {
+        margin: 0;
+      }
+      &-role {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.more-info {
+  text-align: center;
+  background-color: $olive;
+  &-content {
+    margin: 0;
+    width: 65%;
+    margin: auto;
+  }
+}
+
+.mailchimp {
+  background-color: $salmon;
+  color: $white;
+  #mc_embed_signup {
+    margin: auto;
+    width: 50%;
+  }
+  &-header {
+    text-align: center;
+  }
+  label {
+    display: block;
+  }
+  &-input {
+    width: 100%;
+    border: 1px solid $white !important;
+    background-color: transparent;
+  }
+  &-button {
+    color: $white !important;
+    background-color: $olive !important;
+    width: 10em;
+    height: 5em;
+    border: 0 !important;
+  }
+}
+
+.instagram-feed {
+  background-color: $gray;
+  .instagram-pics {
+    margin: 0 auto;
+    padding: 0;
+    width: 95%;
+    li {
+      width: 33%;
+      padding: 2em 3em;
+    }
+  }
+  li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+}
