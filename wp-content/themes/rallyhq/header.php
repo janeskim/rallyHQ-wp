@@ -18,6 +18,7 @@
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 
 <?php wp_head(); ?>
 </head>

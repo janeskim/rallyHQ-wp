@@ -1,4 +1,8 @@
 .main-navigation {
+  .nav-menu a {
+    @extend .t-lato-reg;
+    text-transform: uppercase;
+  }
   #primary-menu {
     float: right;
     .menu-item {
@@ -121,7 +125,7 @@
 }
 
 .home-subheader {
-  @extend .t-lato;
+  @extend .t-lato-light;
   font-size: 2em;
   text-align: center;
   &--white {
@@ -130,6 +134,6 @@
 }
 
 .home-article p {
-  @extend .t-lato;
+  @extend .t-lato-light;
   font-size: 2em;
 }
