@@ -45,13 +45,13 @@ table {
 .hentry {
   margin: 0; }
 
-.t-playfair, .team-member-info-name, .home-header {
+.t-playfair, .home-header, .team-member-info-name {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: normal;
   font-style: normal; }
 
-.t-lato-reg, .main-navigation .nav-menu a, .team-member-info-role {
+.t-lato-reg, .team-member-info-role {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
@@ -84,13 +84,22 @@ time, mark, audio, video, .home-subheader, .home-article p {
   font-weight: normal;
   font-style: normal; }
 
-.main-navigation .nav-menu a {
-  text-transform: uppercase; }
 .main-navigation #primary-menu {
   float: right; }
   .main-navigation #primary-menu .menu-item {
     padding: 1.5em 2em 1.5em 0; }
 
+.home-header {
+  font-size: 4em;
+  line-height: 1.3em;
+  text-align: center; }
+  .home-header--white {
+    color: #fff; }
+.home-subheader {
+  font-size: 2em;
+  text-align: center; }
+  .home-subheader--white {
+    color: #fff; }
 .home-section {
   padding: 2em 0; }
   .home-section--olive {
@@ -103,6 +112,8 @@ time, mark, audio, video, .home-subheader, .home-article p {
   width: 40em;
   margin: auto;
   text-align: center; }
+  .home-article p {
+    font-size: 2em; }
 
 .intro {
   text-align: center;
@@ -133,25 +144,27 @@ time, mark, audio, video, .home-subheader, .home-article p {
       .team-member-info-role {
         font-size: 1.1em; }
 
-.mailchimp {
-  color: #fff; }
-  .mailchimp #mc_embed_signup {
-    margin: auto;
-    width: 50%; }
-  .mailchimp-header {
-    text-align: center; }
-  .mailchimp label {
-    display: block; }
-  .mailchimp-input {
-    width: 100%;
-    border: 1px solid #fff !important;
-    background-color: transparent; }
-  .mailchimp-button {
-    color: #fff !important;
-    background-color: #96a388 !important;
-    width: 10em;
-    height: 5em;
-    border: 0 !important; }
+.mailchimp label, .mailchimp .indicates-required, .mailchimp .asterisk {
+  color: #fff;
+  font-size: 1.3em; }
+.mailchimp #mc_embed_signup {
+  margin: auto;
+  width: 50%; }
+.mailchimp-header {
+  text-align: center; }
+.mailchimp label {
+  display: block; }
+.mailchimp-input {
+  width: 100%;
+  border: 1px solid #fff !important;
+  background-color: transparent;
+  font-size: 2rem; }
+.mailchimp-button {
+  color: #fff !important;
+  background-color: #96a388 !important;
+  width: 10em;
+  height: 5em;
+  border: 0 !important; }
 
 .instagram-feed .instagram-pics {
   margin: 0 auto;
@@ -165,21 +178,5 @@ time, mark, audio, video, .home-subheader, .home-article p {
   padding: 0;
   margin: 0;
   display: inline-block; }
-
-.home-header {
-  font-size: 4em;
-  line-height: 1.3em;
-  text-align: center; }
-  .home-header--white {
-    color: #fff; }
-
-.home-subheader {
-  font-size: 2em;
-  text-align: center; }
-  .home-subheader--white {
-    color: #fff; }
-
-.home-article p {
-  font-size: 2em; }
 
 /*# sourceMappingURL=app.css.map */

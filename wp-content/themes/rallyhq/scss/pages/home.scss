@@ -1,8 +1,4 @@
 .main-navigation {
-  .nav-menu a {
-    @extend .t-lato-reg;
-    text-transform: uppercase;
-  }
   #primary-menu {
     float: right;
     .menu-item {
@@ -12,6 +8,23 @@
 }
 
 .home {
+  &-header {
+    @extend .t-playfair;
+    font-size: 4em;
+    line-height: 1.3em;
+    text-align: center;
+    &--white {
+      color: $white;
+    }
+  }
+  &-subheader {
+    @extend .t-lato-light;
+    font-size: 2em;
+    text-align: center;
+    &--white {
+      color: $white;
+    }
+  }
   &-section {
     padding: 2em 0;
     &--olive {
@@ -28,6 +41,10 @@
     width: 40em;
     margin: auto;
     text-align: center;
+    p {
+      @extend .t-lato-light;
+      font-size: 2em;
+    }
   }
 }
 
@@ -70,7 +87,10 @@
 }
 
 .mailchimp {
-  color: $white;
+  label, .indicates-required, .asterisk {
+    color: $white;
+    font-size: 1.3em;
+  }
   #mc_embed_signup {
     margin: auto;
     width: 50%;
@@ -85,6 +105,7 @@
     width: 100%;
     border: 1px solid $white !important;
     background-color: transparent;
+    font-size: 2rem;
   }
   &-button {
     color: $white !important;
@@ -111,29 +132,4 @@
     margin: 0;
     display: inline-block;
   }
-}
-
-//typography
-.home-header {
-  @extend .t-playfair;
-  font-size: 4em;
-  line-height: 1.3em;
-  text-align: center;
-  &--white {
-    color: $white;
-  }
-}
-
-.home-subheader {
-  @extend .t-lato-light;
-  font-size: 2em;
-  text-align: center;
-  &--white {
-    color: $white;
-  }
-}
-
-.home-article p {
-  @extend .t-lato-light;
-  font-size: 2em;
 }
