@@ -27,6 +27,7 @@
     @extend .t-lato-light;
     font-size: 2em;
     text-align: center;
+    padding: 0 0 1em;
     &--white {
       color: $white;
     }
@@ -77,6 +78,9 @@
       .team-member-info {
         display: block;
       }
+      img {
+        opacity: 0.3;
+      }
     }
     &-info {
       display: none;
@@ -84,7 +88,7 @@
       &-name {
         margin: 0;
         @extend .t-playfair;
-        font-size: 1.5em;
+        font-size: 1.3em;
       }
       &-role {
         @extend .t-lato-reg;

@@ -100,7 +100,8 @@ time, mark, audio, video, .home-subheader, .home-article p {
     color: #fff; }
 .home-subheader {
   font-size: 2em;
-  text-align: center; }
+  text-align: center;
+  padding: 0 0 1em; }
   .home-subheader--white {
     color: #fff; }
 .home-section {
@@ -135,6 +136,8 @@ time, mark, audio, video, .home-subheader, .home-article p {
     padding: 2em 3em; }
     .team-member:hover .team-member-info {
       display: block; }
+    .team-member:hover img {
+      opacity: 0.3; }
     .team-member-info {
       display: none;
       position: absolute;
@@ -143,7 +146,7 @@ time, mark, audio, video, .home-subheader, .home-article p {
       transform: translate(-50%, -50%); }
       .team-member-info-name {
         margin: 0;
-        font-size: 1.5em; }
+        font-size: 1.3em; }
       .team-member-info-role {
         font-size: 1.1em; }
 
