@@ -102,7 +102,7 @@
 }
 
 .mailchimp {
-  label, .indicates-required, .asterisk {
+  label, .indicates-required, .asterisk, #mc-embedded-subscribe {
     color: $white;
     font-size: 1.2em;
   }
@@ -113,18 +113,25 @@
     margin: auto;
     width: 50%;
   }
-  &-header {
-    text-align: center;
+  #mc-embedded-subscribe {
+    margin-top: 1.5em;
+    height: 4em;
+    @extend .t-lato-light;
   }
-  label {
-    display: block;
+  &-input, #mc-embedded-subscribe {
+    border-radius: 5px !important;
   }
   &-input {
     width: 100%;
     border: 1px solid $white !important;
     background-color: transparent;
     font-size: 3rem;
-    border-radius: 5px !important;
+  }
+  &-header {
+    text-align: center;
+  }
+  label {
+    display: block;
   }
   &-button {
     color: $white !important;

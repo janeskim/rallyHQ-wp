@@ -76,7 +76,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video, .home-subheader, .home-article p {
+time, mark, audio, video, .home-subheader, .home-article p, .mailchimp #mc-embedded-subscribe {
   font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
@@ -161,7 +161,7 @@ time, mark, audio, video, .home-subheader, .home-article p {
       .team-member-info-role {
         font-size: 1.1em; }
 
-.mailchimp label, .mailchimp .indicates-required, .mailchimp .asterisk {
+.mailchimp label, .mailchimp .indicates-required, .mailchimp .asterisk, .mailchimp #mc-embedded-subscribe {
   color: #fff;
   font-size: 1.2em; }
 .mailchimp #mc_embed_signup {
@@ -169,16 +169,20 @@ time, mark, audio, video, .home-subheader, .home-article p {
   width: 50%; }
   .mailchimp #mc_embed_signup .mc-field-group {
     padding: 0.5em 0; }
-.mailchimp-header {
-  text-align: center; }
-.mailchimp label {
-  display: block; }
+.mailchimp #mc-embedded-subscribe {
+  margin-top: 1.5em;
+  height: 4em; }
+.mailchimp-input, .mailchimp #mc-embedded-subscribe {
+  border-radius: 5px !important; }
 .mailchimp-input {
   width: 100%;
   border: 1px solid #fff !important;
   background-color: transparent;
-  font-size: 3rem;
-  border-radius: 5px !important; }
+  font-size: 3rem; }
+.mailchimp-header {
+  text-align: center; }
+.mailchimp label {
+  display: block; }
 .mailchimp-button {
   color: #fff !important;
   background-color: #96a388 !important;
