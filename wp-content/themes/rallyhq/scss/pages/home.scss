@@ -18,7 +18,6 @@
     line-height: 1.2em;
     text-align: center;
     padding: 0 0 0.5em;
-
     &--white {
       color: $white;
     }
@@ -34,7 +33,6 @@
   }
   &-section {
     padding: 2em 0 5em;
-
     &--olive {
       background-color: $olive;
     }
@@ -48,12 +46,17 @@
   &-article {
     width: 40em;
     margin: auto;
-
     text-align: center;
     p {
       @extend .t-lato-light;
       font-size: 2em;
     }
+  }
+  &-quotes p{
+    @extend .home-header;
+    font-style: italic;
+    font-size: 2em;
+    line-height: 2em;
   }
 }
 

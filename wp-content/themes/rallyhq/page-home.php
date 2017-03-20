@@ -132,19 +132,21 @@ get_header(); ?>
 			<!--End mc_embed_signup-->
 		</div><!--/mailchimp-->
 
-		<section class="quotes home-section">
-			<?php
-		    $loop = new WP_Query( array( 'post_type' => 'quote' ) );
-		    if ( $loop->have_posts() ) :
-		        while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                <!--this will be a slideshow thing-->
-								<p><?php the_content(); ?></p>
-		        <?php endwhile;
-		    endif;
+		<section class="home-quotes home-section">
+			<article class="home-article">
+				<?php
+			    $loop = new WP_Query( array( 'post_type' => 'quote' ) );
+			    if ( $loop->have_posts() ) :
+			        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+	                <!--this will be a slideshow thing-->
+									<?php the_content(); ?>
+			        <?php endwhile;
+			    endif;
 
-		    wp_reset_postdata();
+			    wp_reset_postdata();
 
-			?>
+				?>
+			</article>
 		</section><!--/quotes-->
 		<section class="instagram-feed home-section home-section--gray">
 				<h2 class="home-header">@RallyHQ</h2>

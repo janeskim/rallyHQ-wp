@@ -45,7 +45,7 @@ table {
 .hentry {
   margin: 0; }
 
-.t-playfair, .home-header, .team-member-info-name {
+.t-playfair, .home-header, .home-quotes p, .team-member-info-name {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: normal;
@@ -91,7 +91,7 @@ time, mark, audio, video, .home-subheader, .home-article p {
   .main-navigation #primary-menu .menu-item {
     padding: 1.5em 2em 1.5em 0; }
 
-.home-header {
+.home-header, .home-quotes p {
   font-size: 4.4em;
   line-height: 1.2em;
   text-align: center;
@@ -118,6 +118,10 @@ time, mark, audio, video, .home-subheader, .home-article p {
   text-align: center; }
   .home-article p {
     font-size: 2em; }
+.home-quotes p {
+  font-style: italic;
+  font-size: 2em;
+  line-height: 2em; }
 
 .intro {
   text-align: center;
