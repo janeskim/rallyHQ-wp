@@ -89,7 +89,8 @@
 .mailchimp {
   label, .indicates-required, .asterisk {
     color: $white;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    padding: 0.5em 0;
   }
   #mc_embed_signup {
     margin: auto;
@@ -113,6 +114,7 @@
     width: 10em;
     height: 5em;
     border: 0 !important;
+    padding: 1em 0;
   }
 }
 

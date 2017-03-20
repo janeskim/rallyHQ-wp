@@ -146,7 +146,8 @@ time, mark, audio, video, .home-subheader, .home-article p {
 
 .mailchimp label, .mailchimp .indicates-required, .mailchimp .asterisk {
   color: #fff;
-  font-size: 1.3em; }
+  font-size: 1.2em;
+  padding: 0.5em 0; }
 .mailchimp #mc_embed_signup {
   margin: auto;
   width: 50%; }
@@ -164,7 +165,8 @@ time, mark, audio, video, .home-subheader, .home-article p {
   background-color: #96a388 !important;
   width: 10em;
   height: 5em;
-  border: 0 !important; }
+  border: 0 !important;
+  padding: 1em 0; }
 
 .instagram-feed .instagram-pics {
   margin: 0 auto;

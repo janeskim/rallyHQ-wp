@@ -16,7 +16,7 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main home-section" role="main">
+		<main id="main" class="site-main" role="main">
 			<div class="slideshow" style="border:1px solid silver; height:300px;"">
 
 				<?php
@@ -30,19 +30,19 @@ get_header(); ?>
 			    wp_reset_postdata();
 				?>
 			</div><!--/slideshow-->
-			<section class="intro home-section">
-				<article class="home-article">
-					<h2 class="home-header">The Rally Mission</h2>
-					<?php
-					while ( have_posts() ) : the_post();
-
-						get_template_part( 'template-parts/content', 'home' );
-
-					endwhile; // End of the loop.
-					?>
-				</article>
-			</section>
 		</main>
+		<section class="intro home-section">
+			<article class="home-article">
+				<h2 class="home-header">The Rally Mission</h2>
+				<?php
+				while ( have_posts() ) : the_post();
+
+					get_template_part( 'template-parts/content', 'home' );
+
+				endwhile; // End of the loop.
+				?>
+			</article>
+		</section>
 		<section class="team home-section">
 			<article class="team-container">
 				<h2 class="home-header home-header--white">Meet Rally</h2>
