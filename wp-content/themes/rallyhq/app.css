@@ -45,11 +45,17 @@ table {
 .hentry {
   margin: 0; }
 
-.t-playfair, .home-header, .home-quotes p, .team-member-info-name {
+.t-playfair-black, .home-header, .team-member-info-name {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal; }
+
+.t-playfair-black-italic, .home-quotes p {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic; }
 
 .t-lato-reg, .main-navigation .nav-menu a, .team-member-info-role {
   font-family: 'Lato', sans-serif;
@@ -91,7 +97,7 @@ time, mark, audio, video, .home-subheader, .home-article p {
   .main-navigation #primary-menu .menu-item {
     padding: 1.5em 2em 1.5em 0; }
 
-.home-header, .home-quotes p {
+.home-header {
   font-size: 4.4em;
   line-height: 1.2em;
   text-align: center;
@@ -119,7 +125,6 @@ time, mark, audio, video, .home-subheader, .home-article p {
   .home-article p {
     font-size: 2em; }
 .home-quotes p {
-  font-style: italic;
   font-size: 2em;
   line-height: 2em; }
 

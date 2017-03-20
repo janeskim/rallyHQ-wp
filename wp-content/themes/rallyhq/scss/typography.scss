@@ -1,10 +1,17 @@
 // We’re using Playfair Bold for the big statements and headings; Karla bold all caps, for bylines and subheadings, and Lato light and regular for body copy
 
-.t-playfair {
+.t-playfair-black {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
-  font-weight: normal;
+  font-weight: 900;
   font-style: normal;
+}
+
+.t-playfair-black-italic {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .t-lato-reg {

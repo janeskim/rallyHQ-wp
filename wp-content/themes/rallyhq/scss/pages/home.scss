@@ -13,7 +13,7 @@
 
 .home {
   &-header {
-    @extend .t-playfair;
+    @extend .t-playfair-black;
     font-size: 4.4em;
     line-height: 1.2em;
     text-align: center;
@@ -53,8 +53,7 @@
     }
   }
   &-quotes p{
-    @extend .home-header;
-    font-style: italic;
+    @extend .t-playfair-black-italic;
     font-size: 2em;
     line-height: 2em;
   }
@@ -90,7 +89,7 @@
       @include center;
       &-name {
         margin: 0;
-        @extend .t-playfair;
+        @extend .t-playfair-black;
         font-size: 1.3em;
       }
       &-role {
