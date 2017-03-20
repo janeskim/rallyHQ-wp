@@ -45,7 +45,7 @@ table {
 .hentry {
   margin: 0; }
 
-.t-playfair-black, .home-header, .team-member-info-name {
+.t-playfair-black, .home-header, .home-footer, .team-member-info-name {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: 900;
@@ -129,6 +129,9 @@ time, mark, audio, video, .home-subheader, .home-article p, .mailchimp #mc-embed
   font-style: italic !important;
   font-size: 2em;
   line-height: 1.5em; }
+.home-footer {
+  font-size: 1.2em;
+  padding: 1.5em 0 2em 3em; }
 
 .intro {
   text-align: center;

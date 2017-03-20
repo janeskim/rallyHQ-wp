@@ -14,10 +14,8 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'rallyhq' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'rallyhq' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'rallyhq' ), 'rallyhq', '<a href="https://automattic.com/" rel="designer">Underscores.me</a>' ); ?>
+		<div class="site-info home-footer">
+			Designed & built by Rally
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

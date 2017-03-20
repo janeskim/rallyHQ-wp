@@ -58,6 +58,11 @@
     font-size: 2em;
     line-height: 1.5em;
   }
+  &-footer {
+    @extend .t-playfair-black;
+    font-size: 1.2em;
+    padding: 1.5em 0 2em 3em;
+  }
 }
 
 .intro {
