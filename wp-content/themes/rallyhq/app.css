@@ -51,7 +51,7 @@ table {
   font-weight: 900;
   font-style: normal; }
 
-.t-playfair-black-italic, .home-quotes p {
+.t-playfair-black-italic {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   font-weight: 900;
@@ -125,8 +125,10 @@ time, mark, audio, video, .home-subheader, .home-article p {
   .home-article p {
     font-size: 2em; }
 .home-quotes p {
+  font-family: 'Playfair Display', serif !important;
+  font-style: italic !important;
   font-size: 2em;
-  line-height: 2em; }
+  line-height: 1.5em; }
 
 .intro {
   text-align: center;

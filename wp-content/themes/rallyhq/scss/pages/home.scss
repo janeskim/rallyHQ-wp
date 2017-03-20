@@ -53,9 +53,10 @@
     }
   }
   &-quotes p{
-    @extend .t-playfair-black-italic;
+    font-family: 'Playfair Display', serif !important;
+    font-style: italic !important;
     font-size: 2em;
-    line-height: 2em;
+    line-height: 1.5em;
   }
 }
 
