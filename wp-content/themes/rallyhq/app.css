@@ -17,7 +17,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  color: #000; }
+  color: #373C41; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -113,9 +113,9 @@ time, mark, audio, video, .home-subheader, .home-article p, .mailchimp #mc-embed
 .home-section {
   padding: 2em 0 5em; }
   .home-section--olive {
-    background-color: #96a388; }
+    background-color: #94A187; }
   .home-section--salmon {
-    background-color: #f1ac89; }
+    background-color: #FCAB83; }
   .home-section--gray {
     background-color: #b7b7b7; }
 .home-article {
@@ -127,22 +127,22 @@ time, mark, audio, video, .home-subheader, .home-article p, .mailchimp #mc-embed
 .home-quotes p {
   font-family: 'Playfair Display', serif !important;
   font-style: italic !important;
-  font-size: 2em;
-  line-height: 1.5em; }
+  font-size: 3em;
+  line-height: 1.4em; }
 .home-footer {
-  font-size: 1.2em;
+  font-size: 1.4em;
   padding: 1.5em 0 2em 3em; }
 
 .intro {
   text-align: center;
-  background-color: #f1ac89; }
+  background-color: #FCAB83; }
   .intro .entry-content {
     margin: 0; }
 
 .team {
   position: relative;
   text-align: center;
-  background-color: #d75558; }
+  background-color: #E54B4B; }
   .team-member {
     position: relative;
     width: 33%;
@@ -188,7 +188,7 @@ time, mark, audio, video, .home-subheader, .home-article p, .mailchimp #mc-embed
   display: block; }
 .mailchimp-button {
   color: #fff !important;
-  background-color: #96a388 !important;
+  background-color: #94A187 !important;
   width: 10em;
   height: 5em;
   border: 0 !important;
